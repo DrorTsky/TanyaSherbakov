@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/tanyasherbakov/static/css/main.073c9b0a.css",
+    "main.js": "/tanyasherbakov/static/js/main.d6f4b201.js",
+    "static/js/787.08110660.chunk.js": "/tanyasherbakov/static/js/787.08110660.chunk.js",
+    "index.html": "/tanyasherbakov/index.html",
+    "main.073c9b0a.css.map": "/tanyasherbakov/static/css/main.073c9b0a.css.map",
+    "main.d6f4b201.js.map": "/tanyasherbakov/static/js/main.d6f4b201.js.map",
+    "787.08110660.chunk.js.map": "/tanyasherbakov/static/js/787.08110660.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.d6f4b201.js"
+  ]
+}
