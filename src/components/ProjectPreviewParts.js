@@ -15,10 +15,10 @@ const ProjectNameText = styled.div`
     line-height: 46px;
   }
 `;
-const Container = styled.div`
+export const Container = styled.div`
   display: flex;
 `;
-const ColumnContainer = styled(Container)`
+export const ColumnContainer = styled(Container)`
   flex-direction: column;
   // width: 100%;
 `;

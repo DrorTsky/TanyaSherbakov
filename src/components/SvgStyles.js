@@ -7,6 +7,8 @@ import { ReactComponent as KillbillsSVG } from "../images/killbills.svg";
 import { ReactComponent as MaynoothSVG } from "../images/maynooth.svg";
 import { ReactComponent as BlueBlobSVG } from "../images/blueBlob.svg";
 import { ReactComponent as PinkBlobSVG } from "../images/pinkBlob.svg";
+import { ReactComponent as DoubleBlobSVG } from "../images/doubleBlob.svg";
+import { ReactComponent as IsraelSVG } from "../images/israel.svg";
 
 export const BlueBlobSVGStyle = styled(BlueBlobSVG)`
   margin-top: 5px;
@@ -51,5 +53,24 @@ export const MaynoothSVGStyle = styled(MaynoothSVG)`
   pointer-events: none;
   @media (max-width: 768px) {
     height: 40%;
+  }
+`;
+
+export const DoubleBlobSVGStyle = styled(DoubleBlobSVG)`
+  width: 369px;
+  height: 355px;
+  @media (max-width: 768px) {
+    width: 223px;
+    height: 215px;
+    align-self: center;
+  }
+`;
+
+export const IsraelSVGStyle = styled(IsraelSVG)`
+  width: 18px;
+  height: 59px;
+  @media (max-width: 768px) {
+    width: 9px;
+    height: 31px;
   }
 `;
