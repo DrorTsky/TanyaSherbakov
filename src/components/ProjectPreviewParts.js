@@ -124,7 +124,6 @@ const StyledArrowIcon = styled(Button)`
 
 const ProjectLink = (props) => {
   const { link, color } = props;
-  console.log("color", color);
   return (
     <Container>
       <ProjectLinkText>View Project</ProjectLinkText>

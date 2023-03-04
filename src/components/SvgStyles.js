@@ -20,6 +20,17 @@ export const BlueBlobSVGStyle = styled(BlueBlobSVG)`
   }
 `;
 
+export const HeaderBlueBlobSVGStyle = styled(BlueBlobSVG)`
+  height: 32px;
+  width: 31px;
+  margin-top: 5px;
+  align-self: center;
+  @media (max-width: 768px) {
+    height: 24px;
+    width: 23px;
+  }
+`;
+
 export const PinkBlobSVGStyle = styled(PinkBlobSVG)`
   margin-top: 5px;
   align-self: center;
