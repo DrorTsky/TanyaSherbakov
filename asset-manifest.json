@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/tanyasherbakov/static/css/main.073c9b0a.css",
-    "main.js": "/tanyasherbakov/static/js/main.e49a0f65.js",
+    "main.js": "/tanyasherbakov/static/js/main.a333928c.js",
     "static/js/787.08110660.chunk.js": "/tanyasherbakov/static/js/787.08110660.chunk.js",
     "static/media/maynooth.svg": "/tanyasherbakov/static/media/maynooth.ae7357900c1105bbaf76cffcc90183f9.svg",
     "static/media/killbills.svg": "/tanyasherbakov/static/media/killbills.03b7e1433b104acaeca265af3d72087e.svg",
@@ -14,11 +14,11 @@
     "static/media/blueBlob.svg": "/tanyasherbakov/static/media/blueBlob.678092202e957711e364e16d5a6ba9ef.svg",
     "static/media/pinkBlob.svg": "/tanyasherbakov/static/media/pinkBlob.9842ce05604828900a90d8e04017e4c1.svg",
     "main.073c9b0a.css.map": "/tanyasherbakov/static/css/main.073c9b0a.css.map",
-    "main.e49a0f65.js.map": "/tanyasherbakov/static/js/main.e49a0f65.js.map",
+    "main.a333928c.js.map": "/tanyasherbakov/static/js/main.a333928c.js.map",
     "787.08110660.chunk.js.map": "/tanyasherbakov/static/js/787.08110660.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.e49a0f65.js"
+    "static/js/main.a333928c.js"
   ]
 }
