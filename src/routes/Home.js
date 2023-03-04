@@ -31,7 +31,6 @@ const HelloHeaderStyle = styled.div`
   font-weight: 500;
   font-size: 64px;
   line-height: 82px;
-  /* identical to box height */
 
   color: #444cf7;
   // @media (max-width: 768px) {
@@ -44,7 +43,6 @@ const HelloHeaderStyle = styled.div`
 
 const IntroductionTextContainerStyle = styled(ColumnContainer)`
   @media (max-width: 768px) {
-    // padding-inline: 15px;
   }
 `;
 

@@ -1,8 +1,9 @@
 /** @format */
 import { Link } from "react-router-dom";
-import { PinkBlobSVGStyle, BlueBlobSVGStyle } from "./SvgStyles";
+import { PinkBlobSVGStyle, BlueBlobSVGStyle, ArrowSVGStyle } from "./SvgStyles";
 import React from "react";
 import styled from "styled-components";
+import { Button } from "antd";
 
 const Icon = styled.div``;
 const ProjectNameText = styled.div`
@@ -50,6 +51,7 @@ const DescriptionText = styled.div`
 `;
 
 const ProjectLinkText = styled.div`
+  align-self: center;
   font-style: normal;
   font-weight: 500;
   font-size: 36px;
@@ -114,12 +116,23 @@ const Description = (props) => {
   return <DescriptionText>{text}</DescriptionText>;
 };
 
+const StyledArrowIcon = styled(Button)`
+  .anticon-arrow-right {
+    color: red;
+  }
+`;
+
 const ProjectLink = (props) => {
-  const { link } = props;
+  const { link, color } = props;
+  console.log("color", color);
   return (
     <Container>
       <ProjectLinkText>View Project</ProjectLinkText>
-      <Link to={link}>{"->"}</Link>
+      <Link to={link}>
+        <StyledArrowIcon type={"link"}>
+          <ArrowSVGStyle color={color} />
+        </StyledArrowIcon>
+      </Link>
     </Container>
   );
 };
@@ -135,7 +148,10 @@ const DescriptionContainer = (props) => {
   return (
     <DescriptionContainerStyle>
       <Description text={props.text} />
-      <ProjectLink link={props.link} />
+      <ProjectLink
+        link={props.link}
+        color={props.blob === "blue" ? "#444CF7" : "#FF8BB2"}
+      />
     </DescriptionContainerStyle>
   );
 };
