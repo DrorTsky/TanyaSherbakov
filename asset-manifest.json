@@ -1,12 +1,13 @@
 {
   "files": {
     "main.css": "/tanyasherbakov/static/css/main.073c9b0a.css",
-    "main.js": "/tanyasherbakov/static/js/main.a333928c.js",
+    "main.js": "/tanyasherbakov/static/js/main.c408eda2.js",
     "static/js/787.08110660.chunk.js": "/tanyasherbakov/static/js/787.08110660.chunk.js",
     "static/media/maynooth.svg": "/tanyasherbakov/static/media/maynooth.ae7357900c1105bbaf76cffcc90183f9.svg",
     "static/media/killbills.svg": "/tanyasherbakov/static/media/killbills.03b7e1433b104acaeca265af3d72087e.svg",
     "static/media/ichi.svg": "/tanyasherbakov/static/media/ichi.14f338f0a55245489604bd2a197047a8.svg",
     "static/media/marketlog.svg": "/tanyasherbakov/static/media/marketlog.ef297749ce07531e6a68eac34949de4d.svg",
+    "static/media/about_wildheart.svg": "/tanyasherbakov/static/media/about_wildheart.718f53fc478736ed6b91a3a01c4cc605.svg",
     "static/media/doubleBlob.svg": "/tanyasherbakov/static/media/doubleBlob.3b4565ac4d5a8576f1bafa237894e52c.svg",
     "index.html": "/tanyasherbakov/index.html",
     "static/media/israel.svg": "/tanyasherbakov/static/media/israel.2f1c88bd1addf48bb9aa32ecaa58b48c.svg",
@@ -14,11 +15,11 @@
     "static/media/blueBlob.svg": "/tanyasherbakov/static/media/blueBlob.678092202e957711e364e16d5a6ba9ef.svg",
     "static/media/pinkBlob.svg": "/tanyasherbakov/static/media/pinkBlob.9842ce05604828900a90d8e04017e4c1.svg",
     "main.073c9b0a.css.map": "/tanyasherbakov/static/css/main.073c9b0a.css.map",
-    "main.a333928c.js.map": "/tanyasherbakov/static/js/main.a333928c.js.map",
+    "main.c408eda2.js.map": "/tanyasherbakov/static/js/main.c408eda2.js.map",
     "787.08110660.chunk.js.map": "/tanyasherbakov/static/js/787.08110660.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.a333928c.js"
+    "static/js/main.c408eda2.js"
   ]
 }
