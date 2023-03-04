@@ -10,6 +10,7 @@ import { ReactComponent as PinkBlobSVG } from "../images/pinkBlob.svg";
 import { ReactComponent as DoubleBlobSVG } from "../images/doubleBlob.svg";
 import { ReactComponent as IsraelSVG } from "../images/israel.svg";
 import { ReactComponent as ArrowSVG } from "../images/arrow.svg";
+import { ReactComponent as AboutSVG } from "../images/about_wildheart.svg";
 
 export const BlueBlobSVGStyle = styled(BlueBlobSVG)`
   margin-top: 5px;
@@ -86,6 +87,7 @@ export const IsraelSVGStyle = styled(IsraelSVG)`
     height: 31px;
   }
 `;
+
 export const ArrowSVGStyle = styled(ArrowSVG)`
   width: 36px;
   height: 46px;
@@ -93,5 +95,14 @@ export const ArrowSVGStyle = styled(ArrowSVG)`
     ${(props) => `fill: ${props.color}`}
   }
   @media (max-width: 768px) {
+  }
+`;
+
+export const AboutSVGStyle = styled(AboutSVG)`
+  width: 608px;
+  height: 606px;
+  @media (max-width: 768px) {
+    width: 330px;
+    height: 328px;
   }
 `;
