@@ -4,7 +4,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import styled from "styled-components";
 import { HeaderBlueBlobSVGStyle } from "../components/SvgStyles";
-import Navbar from "./NavBar";
+import { Navbar, MobileNavBar } from "./NavBar";
 
 const NameText = styled.div`
   //   font-family: "Futura PT";
@@ -16,13 +16,6 @@ const NameText = styled.div`
     font-size: 24px;
     line-height: 31px;
   }
-`;
-
-const NavbarItem = styled.div`
-  font-style: normal;
-  font-weight: 500;
-  font-size: 22px;
-  line-height: 28px;
 `;
 
 const MainConatiner = styled.div`
@@ -62,7 +55,9 @@ const Header = () => {
         <NameText>Tanya Sherbakov</NameText>
       </Conatiner>
       {width <= 768 ? (
-        <>mobile</>
+        <>
+          <MobileNavBar />
+        </>
       ) : (
         <>
           <Navbar />
