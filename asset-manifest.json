@@ -1,15 +1,21 @@
 {
   "files": {
     "main.css": "/tanyasherbakov/static/css/main.073c9b0a.css",
-    "main.js": "/tanyasherbakov/static/js/main.d6f4b201.js",
+    "main.js": "/tanyasherbakov/static/js/main.3f624888.js",
     "static/js/787.08110660.chunk.js": "/tanyasherbakov/static/js/787.08110660.chunk.js",
+    "static/media/maynooth.svg": "/tanyasherbakov/static/media/maynooth.ae7357900c1105bbaf76cffcc90183f9.svg",
+    "static/media/killbills.svg": "/tanyasherbakov/static/media/killbills.03b7e1433b104acaeca265af3d72087e.svg",
+    "static/media/ichi.svg": "/tanyasherbakov/static/media/ichi.14f338f0a55245489604bd2a197047a8.svg",
+    "static/media/marketlog.svg": "/tanyasherbakov/static/media/marketlog.ef297749ce07531e6a68eac34949de4d.svg",
     "index.html": "/tanyasherbakov/index.html",
+    "static/media/blueBlob.svg": "/tanyasherbakov/static/media/blueBlob.678092202e957711e364e16d5a6ba9ef.svg",
+    "static/media/pinkBlob.svg": "/tanyasherbakov/static/media/pinkBlob.9842ce05604828900a90d8e04017e4c1.svg",
     "main.073c9b0a.css.map": "/tanyasherbakov/static/css/main.073c9b0a.css.map",
-    "main.d6f4b201.js.map": "/tanyasherbakov/static/js/main.d6f4b201.js.map",
+    "main.3f624888.js.map": "/tanyasherbakov/static/js/main.3f624888.js.map",
     "787.08110660.chunk.js.map": "/tanyasherbakov/static/js/787.08110660.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.d6f4b201.js"
+    "static/js/main.3f624888.js"
   ]
 }
