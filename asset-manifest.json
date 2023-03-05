@@ -1,11 +1,11 @@
 {
   "files": {
     "main.css": "/tanyasherbakov/static/css/main.073c9b0a.css",
-    "main.js": "/tanyasherbakov/static/js/main.be9552e9.js",
+    "main.js": "/tanyasherbakov/static/js/main.da412f30.js",
     "static/js/787.08110660.chunk.js": "/tanyasherbakov/static/js/787.08110660.chunk.js",
     "static/media/Patzanki 6.svg": "/tanyasherbakov/static/media/Patzanki 6.f93351bd87ffce8c0390fe73681fcc2a.svg",
-    "static/media/Magazines 2.svg": "/tanyasherbakov/static/media/Magazines 2.e04f266cc4120f7f9a972e58ad7aa523.svg",
-    "static/media/Magazines.svg": "/tanyasherbakov/static/media/Magazines.06ee3db472963e657c1d05066c34f9d3.svg",
+    "static/media/Magazines 2.svg": "/tanyasherbakov/static/media/Magazines 2.ba7b700a042b8a7dcef7fd7240f9b661.svg",
+    "static/media/Magazines.svg": "/tanyasherbakov/static/media/Magazines.ebd56235d93cf9f71fa0a05bd47f4e8f.svg",
     "static/media/Afterdark.svg": "/tanyasherbakov/static/media/Afterdark.07600c1f88dbda9e4ae727ef6e06d0a9.svg",
     "static/media/maynooth.svg": "/tanyasherbakov/static/media/maynooth.ae7357900c1105bbaf76cffcc90183f9.svg",
     "static/media/killbills.svg": "/tanyasherbakov/static/media/killbills.03b7e1433b104acaeca265af3d72087e.svg",
@@ -29,11 +29,11 @@
     "static/media/blueBlob.svg": "/tanyasherbakov/static/media/blueBlob.678092202e957711e364e16d5a6ba9ef.svg",
     "static/media/pinkBlob.svg": "/tanyasherbakov/static/media/pinkBlob.9842ce05604828900a90d8e04017e4c1.svg",
     "main.073c9b0a.css.map": "/tanyasherbakov/static/css/main.073c9b0a.css.map",
-    "main.be9552e9.js.map": "/tanyasherbakov/static/js/main.be9552e9.js.map",
+    "main.da412f30.js.map": "/tanyasherbakov/static/js/main.da412f30.js.map",
     "787.08110660.chunk.js.map": "/tanyasherbakov/static/js/787.08110660.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.be9552e9.js"
+    "static/js/main.da412f30.js"
   ]
 }
