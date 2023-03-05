@@ -1,12 +1,26 @@
 {
   "files": {
     "main.css": "/tanyasherbakov/static/css/main.073c9b0a.css",
-    "main.js": "/tanyasherbakov/static/js/main.c408eda2.js",
+    "main.js": "/tanyasherbakov/static/js/main.be9552e9.js",
     "static/js/787.08110660.chunk.js": "/tanyasherbakov/static/js/787.08110660.chunk.js",
+    "static/media/Patzanki 6.svg": "/tanyasherbakov/static/media/Patzanki 6.f93351bd87ffce8c0390fe73681fcc2a.svg",
+    "static/media/Magazines 2.svg": "/tanyasherbakov/static/media/Magazines 2.e04f266cc4120f7f9a972e58ad7aa523.svg",
+    "static/media/Magazines.svg": "/tanyasherbakov/static/media/Magazines.06ee3db472963e657c1d05066c34f9d3.svg",
+    "static/media/Afterdark.svg": "/tanyasherbakov/static/media/Afterdark.07600c1f88dbda9e4ae727ef6e06d0a9.svg",
     "static/media/maynooth.svg": "/tanyasherbakov/static/media/maynooth.ae7357900c1105bbaf76cffcc90183f9.svg",
     "static/media/killbills.svg": "/tanyasherbakov/static/media/killbills.03b7e1433b104acaeca265af3d72087e.svg",
+    "static/media/Patzanki 3.svg": "/tanyasherbakov/static/media/Patzanki 3.039a4749f58f1ed387337f69b8cbf563.svg",
+    "static/media/Patzanki 2.svg": "/tanyasherbakov/static/media/Patzanki 2.ab295de5250eeb87380ca593c980ac9e.svg",
+    "static/media/Malluable 3.svg": "/tanyasherbakov/static/media/Malluable 3.25d380fe9e0d5cb72dc3d82bfe423b8e.svg",
+    "static/media/Patzanki 1.svg": "/tanyasherbakov/static/media/Patzanki 1.2ee7d24662af0cf7eb07996f431374f7.svg",
+    "static/media/Patzanki 7.svg": "/tanyasherbakov/static/media/Patzanki 7.c861c714e8d4b362500e69e665e88931.svg",
+    "static/media/Patzanki 8.svg": "/tanyasherbakov/static/media/Patzanki 8.c014facbf48b60677c149bc2315bf2de.svg",
+    "static/media/Patzanki 4.svg": "/tanyasherbakov/static/media/Patzanki 4.53b857f42f56a1334a0b006c1dfe8051.svg",
     "static/media/ichi.svg": "/tanyasherbakov/static/media/ichi.14f338f0a55245489604bd2a197047a8.svg",
+    "static/media/Patzanki 5.svg": "/tanyasherbakov/static/media/Patzanki 5.1fe1cca190bc03083592d56e04a46de7.svg",
     "static/media/marketlog.svg": "/tanyasherbakov/static/media/marketlog.ef297749ce07531e6a68eac34949de4d.svg",
+    "static/media/Malluable 1.svg": "/tanyasherbakov/static/media/Malluable 1.7a6510c1b9a1077708f7d75f0834959e.svg",
+    "static/media/Malluable 2.svg": "/tanyasherbakov/static/media/Malluable 2.9914768a9c875154903ba1b7e5d11aaf.svg",
     "static/media/about_wildheart.svg": "/tanyasherbakov/static/media/about_wildheart.718f53fc478736ed6b91a3a01c4cc605.svg",
     "static/media/doubleBlob.svg": "/tanyasherbakov/static/media/doubleBlob.3b4565ac4d5a8576f1bafa237894e52c.svg",
     "index.html": "/tanyasherbakov/index.html",
@@ -15,11 +29,11 @@
     "static/media/blueBlob.svg": "/tanyasherbakov/static/media/blueBlob.678092202e957711e364e16d5a6ba9ef.svg",
     "static/media/pinkBlob.svg": "/tanyasherbakov/static/media/pinkBlob.9842ce05604828900a90d8e04017e4c1.svg",
     "main.073c9b0a.css.map": "/tanyasherbakov/static/css/main.073c9b0a.css.map",
-    "main.c408eda2.js.map": "/tanyasherbakov/static/js/main.c408eda2.js.map",
+    "main.be9552e9.js.map": "/tanyasherbakov/static/js/main.be9552e9.js.map",
     "787.08110660.chunk.js.map": "/tanyasherbakov/static/js/787.08110660.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.c408eda2.js"
+    "static/js/main.be9552e9.js"
   ]
 }
