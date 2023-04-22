@@ -204,3 +204,12 @@ export const MarketlogResultSmallStyledImage = styled.img`
     height: 200px;
   }
 `;
+
+export const KillBillsOverviewStyledImage = styled.img`
+  width: 488.83px;
+  height: 905px;
+  @media (max-width: 768px) {
+    width: 330px;
+    height: 610px;
+  }
+`;

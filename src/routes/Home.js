@@ -102,7 +102,7 @@ export const Home = () => {
         text={
           "The platform provides an easy to use, fast and Eco – friendly way for people to pay their bills by gathering them all in one app disregarding payment vouchers."
         }
-        link={"/about"}
+        link={"/KillBills"}
         name={"KillBills"}
         year={2022}
         blob={"pink"}
