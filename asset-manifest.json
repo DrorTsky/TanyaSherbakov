@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/tanyasherbakov/static/css/main.073c9b0a.css",
-    "main.js": "/tanyasherbakov/static/js/main.a0036472.js",
+    "main.js": "/tanyasherbakov/static/js/main.257b6e1c.js",
     "static/js/787.08110660.chunk.js": "/tanyasherbakov/static/js/787.08110660.chunk.js",
     "static/media/Patzanki 6.webp": "/tanyasherbakov/static/media/Patzanki 6.1686a936da82102728a0.webp",
     "static/media/Magazines 2.webp": "/tanyasherbakov/static/media/Magazines 2.c3055611371b881dc4aa.webp",
@@ -9,8 +9,10 @@
     "static/media/Malluable 3.webp": "/tanyasherbakov/static/media/Malluable 3.7d951da536af16a5a80f.webp",
     "static/media/Marketlog_result_big_2.webp": "/tanyasherbakov/static/media/Marketlog_result_big_2.bbf8ab5e09c8946c89fa.webp",
     "static/media/Marketlog_result_big_1.webp": "/tanyasherbakov/static/media/Marketlog_result_big_1.f6206b8863b2aad61352.webp",
+    "static/media/killbills-ui-guide.webp": "/tanyasherbakov/static/media/killbills-ui-guide.4c63539c2728892e1920.webp",
     "static/media/Marketlog_result_small_2.webp": "/tanyasherbakov/static/media/Marketlog_result_small_2.7ded4f91f7712cbf0a5c.webp",
     "static/media/Afterdark.webp": "/tanyasherbakov/static/media/Afterdark.a4574d5f3f3e88dda264.webp",
+    "static/media/killbills - user.webp": "/tanyasherbakov/static/media/killbills - user.20dcee9d6ddfd7fe674c.webp",
     "static/media/maynooth.webp": "/tanyasherbakov/static/media/maynooth.54a596930263024a36c1.webp",
     "static/media/Patzanki 2.webp": "/tanyasherbakov/static/media/Patzanki 2.0ab07486c7d353a6e8cd.webp",
     "static/media/Marketlog_result_small_1.webp": "/tanyasherbakov/static/media/Marketlog_result_small_1.1037c852e7b51d17f535.webp",
@@ -20,11 +22,17 @@
     "static/media/Patzanki 7.webp": "/tanyasherbakov/static/media/Patzanki 7.2369ac69dca71e6841df.webp",
     "static/media/Patzanki 1.webp": "/tanyasherbakov/static/media/Patzanki 1.f12a0313062870316575.webp",
     "static/media/killbills.webp": "/tanyasherbakov/static/media/killbills.8b5dc8419eb8d7e568e8.webp",
+    "static/media/killbills - sketch.webp": "/tanyasherbakov/static/media/killbills - sketch.5834fd528bcc641dadda.webp",
     "static/media/marketlog.webp": "/tanyasherbakov/static/media/marketlog.d08c268004fded6d8833.webp",
     "static/media/Malluable 2.webp": "/tanyasherbakov/static/media/Malluable 2.0c0f2a7381df99b1605a.webp",
     "static/media/marketlog-understanding.webp": "/tanyasherbakov/static/media/marketlog-understanding.4f39c54a963e6330e3c9.webp",
+    "static/media/killbills-ui-guide-2.webp": "/tanyasherbakov/static/media/killbills-ui-guide-2.68250d91ccbd6e3755b4.webp",
     "static/media/ichi.webp": "/tanyasherbakov/static/media/ichi.97a84938d775117098a8.webp",
+    "static/media/killbills-overview.webp": "/tanyasherbakov/static/media/killbills-overview.7302cba1fd4882159ddf.webp",
     "static/media/marketlog-overview.webp": "/tanyasherbakov/static/media/marketlog-overview.749003294e6bef576900.webp",
+    "static/media/killbills-ui-guide-3.webp": "/tanyasherbakov/static/media/killbills-ui-guide-3.24e3b050134a398b0966.webp",
+    "static/media/killbills-pain-points.webp": "/tanyasherbakov/static/media/killbills-pain-points.5fdb401183a8c1c4e9e5.webp",
+    "static/media/killbills-starting-design.webp": "/tanyasherbakov/static/media/killbills-starting-design.0c656f529df6a2dab729.webp",
     "static/media/Patzanki 3.webp": "/tanyasherbakov/static/media/Patzanki 3.c7de3383647c2edbbce9.webp",
     "static/media/Patzanki 4.webp": "/tanyasherbakov/static/media/Patzanki 4.58df42c01c35359d6a69.webp",
     "static/media/Patzanki 5.webp": "/tanyasherbakov/static/media/Patzanki 5.c6aefe03cbbfa5490927.webp",
@@ -35,11 +43,11 @@
     "static/media/blueBlob.svg": "/tanyasherbakov/static/media/blueBlob.678092202e957711e364e16d5a6ba9ef.svg",
     "static/media/pinkBlob.svg": "/tanyasherbakov/static/media/pinkBlob.9842ce05604828900a90d8e04017e4c1.svg",
     "main.073c9b0a.css.map": "/tanyasherbakov/static/css/main.073c9b0a.css.map",
-    "main.a0036472.js.map": "/tanyasherbakov/static/js/main.a0036472.js.map",
+    "main.257b6e1c.js.map": "/tanyasherbakov/static/js/main.257b6e1c.js.map",
     "787.08110660.chunk.js.map": "/tanyasherbakov/static/js/787.08110660.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.a0036472.js"
+    "static/js/main.257b6e1c.js"
   ]
 }
