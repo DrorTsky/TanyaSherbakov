@@ -5,13 +5,16 @@ import { ProjectPreview } from "../components/ProjectPreviewParts";
 import { Container, ColumnContainer } from "../components/ProjectPreviewParts";
 import styled from "styled-components";
 import {
-  MarketLogSVGStyle,
-  IchiSVGStyle,
-  KillbillsSVGStyle,
-  MaynoothSVGStyle,
-  DoubleBlobSVGStyle,
-  IsraelSVGStyle,
+  StyledImage,
+  DoubleBlobStyledImage,
+  IsraelStyledImage,
 } from "../components/SvgStyles";
+import MarketLogWEBPStyle from "../images/marketlog.webp";
+import IchiWEBPStyle from "../images/ichi.webp";
+import KillbillsWEBPStyle from "../images/killbills.webp";
+import MaynoothWEBPStyle from "../images/maynooth.webp";
+import DoubleBlobWEBP from "../images/doubleBlob.webp";
+import IsraelWEBP from "../images/israel.webp";
 
 const IntroductionTextStyle = styled.div`
   font-style: normal;
@@ -63,13 +66,13 @@ export const Home = () => {
   return (
     <div>
       <IntroductionContainer>
-        <DoubleBlobSVGStyle />
+        <DoubleBlobStyledImage src={DoubleBlobWEBP} alt={"Double Blob"} />
         <IntroductionTextContainerStyle>
           <HelloHeaderStyle>Hello!</HelloHeaderStyle>
           <Container>
             <IntroductionTextStyle>
               I'm Tanya, a product designer based in Israel.&nbsp;
-              <IsraelSVGStyle />
+              <IsraelStyledImage src={IsraelWEBP} alt={"Israel"} />
             </IntroductionTextStyle>
           </Container>
           <IntroductionTextStyle>
@@ -82,12 +85,12 @@ export const Home = () => {
         text={
           "Marketlog offers an online community & provides the user with tools to track, compare and analyze their trading activity."
         }
-        link={"/about"}
+        link={"/MarketLog"}
         name={"Marketlog"}
         year={2022}
         blob={"blue"}
       >
-        <MarketLogSVGStyle />
+        <StyledImage src={MarketLogWEBPStyle} alt={"Market Log"} />
       </ProjectPreview>
       <ProjectPreview
         text={
@@ -98,7 +101,7 @@ export const Home = () => {
         year={2022}
         blob={"pink"}
       >
-        <KillbillsSVGStyle />
+        <StyledImage src={KillbillsWEBPStyle} alt={"KillBills"} />
       </ProjectPreview>
       <ProjectPreview
         text={
@@ -109,7 +112,7 @@ export const Home = () => {
         year={2021}
         blob={"blue"}
       >
-        <IchiSVGStyle />
+        <StyledImage src={IchiWEBPStyle} alt={"Ichi"} />
       </ProjectPreview>
       <ProjectPreview
         text={
@@ -120,7 +123,7 @@ export const Home = () => {
         year={2021}
         blob={"pink"}
       >
-        <MaynoothSVGStyle />
+        <StyledImage src={MaynoothWEBPStyle} alt={"Maynooth"} />
       </ProjectPreview>
     </div>
   );
