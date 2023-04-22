@@ -95,7 +95,7 @@ const ProjectDescriptionText = styled.div`
   font-size: 24px;
   line-height: 31px;
   text-align: center;
-  padding-inline: 201.5px;
+  padding-inline: 344px;
 
   color: #818890;
   @media (max-width: 768px) {
@@ -116,6 +116,11 @@ const ProjectDescriptionContainer = styled.div`
   }
 `;
 
+const ProjectDescriptionTextContainer = styled.div`
+  width: 100%;
+  align-self: center;
+`;
+
 export const ProjectDescription = ({
   sectionHeaderText,
   dateRange,
@@ -124,10 +129,12 @@ export const ProjectDescription = ({
   return (
     <ProjectDescriptionContainer>
       <SectionHeader>{sectionHeaderText} </SectionHeader>
-      <ProjectDescriptionText>
-        Product Design | {dateRange}
-      </ProjectDescriptionText>
-      <ProjectDescriptionText>{description}</ProjectDescriptionText>
+      <ProjectDescriptionTextContainer>
+        <ProjectDescriptionText>
+          Product Design | {dateRange}
+        </ProjectDescriptionText>
+        <ProjectDescriptionText>{description}</ProjectDescriptionText>
+      </ProjectDescriptionTextContainer>
     </ProjectDescriptionContainer>
   );
 };

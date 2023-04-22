@@ -7,10 +7,7 @@ import { ReactComponent as PinkBlobSVG } from "../images/pinkBlob.svg";
 import { ReactComponent as ArrowSVG } from "../images/arrow.svg";
 
 export const OverviewStyledImage = styled.img`
-  // height: 905px;
-  // width: 490px;
   width: 50%;
-
   @media (max-width: 768px) {
     width: 330px;
     height: 610px;
