@@ -1,24 +1,30 @@
 /** @format */
 
-import React, { useEffect, useState } from "react";
+import React from "react";
 import styled from "styled-components";
-import {
-  PatzankiOneSVGStyle,
-  PatzankiEightSVGStyle,
-  PatzankiFiveSVGStyle,
-  PatzankiFourSVGStyle,
-  PatzankiSevenSVGStyle,
-  PatzankiSixSVGStyle,
-  PatzankiThreeSVGStyle,
-  PatzankiTwoSVGStyle,
-  MalluableOneSVGStyle,
-  MalluableTwoSVGStyle,
-  MalluableThreeSVGStyle,
-  AfterdarkSVGStyle,
-  MagazinesOneSVGStyle,
-  MagazinesTwoSVGStyle,
-} from "./SvgStyles";
+import MalluableOneWEBP from "../images/Malluable 1.webp";
+import MalluableTwoWEBP from "../images/Malluable 2.webp";
+import MalluableThreeWEBP from "../images/Malluable 3.webp";
+import PartizankiOneWEBP from "../images/Patzanki 1.webp";
+import PartizankiTwoWEBP from "../images/Patzanki 2.webp";
+import PartizankiThreeWEBP from "../images/Patzanki 3.webp";
+import PartizankiFourWEBP from "../images/Patzanki 4.webp";
+import PartizankiFiveWEBP from "../images/Patzanki 5.webp";
+import PartizankiSixWEBP from "../images/Patzanki 6.webp";
+import PartizankiSevenWEBP from "../images/Patzanki 7.webp";
+import PartizankiEightWEBP from "../images/Patzanki 8.webp";
+import AfterdarkWEBP from "../images/Afterdark.webp";
+import MagazinesOneWEBP from "../images/Magazines.webp";
+import MagazinesTwoWEBP from "../images/Magazines 2.webp";
 import { Divider } from "./ProjectPreviewParts";
+import {
+  BigPatzankiStyledImage,
+  SmallPatzankiStyledImage,
+  MalluableSmallStyledImage,
+  MalluableBigStyledImage,
+  AfterdarkStyledImage,
+  MagazinesStyledImage,
+} from "./SvgStyles";
 
 const SingleImage = styled.div`
   display: flex;
@@ -107,20 +113,20 @@ const GraphicDesign = () => {
         />
         <Images>
           <DoubleImage>
-            <PatzankiOneSVGStyle />
-            <PatzankiTwoSVGStyle />
+            <BigPatzankiStyledImage src={PartizankiOneWEBP} />
+            <BigPatzankiStyledImage src={PartizankiTwoWEBP} />
           </DoubleImage>
           <DoubleImage>
-            <PatzankiThreeSVGStyle />
-            <PatzankiFourSVGStyle />
+            <SmallPatzankiStyledImage src={PartizankiThreeWEBP} />
+            <SmallPatzankiStyledImage src={PartizankiFourWEBP} />
           </DoubleImage>
           <DoubleImage>
-            <PatzankiFiveSVGStyle />
-            <PatzankiSixSVGStyle />
+            <SmallPatzankiStyledImage src={PartizankiFiveWEBP} />
+            <SmallPatzankiStyledImage src={PartizankiSixWEBP} />
           </DoubleImage>
           <DoubleImage>
-            <PatzankiSevenSVGStyle />
-            <PatzankiEightSVGStyle />
+            <BigPatzankiStyledImage src={PartizankiSevenWEBP} />
+            <BigPatzankiStyledImage src={PartizankiEightWEBP} />
           </DoubleImage>
         </Images>
         <Divider />
@@ -134,11 +140,11 @@ const GraphicDesign = () => {
         />
         <Images>
           <DoubleImage>
-            <MalluableOneSVGStyle />
-            <MalluableTwoSVGStyle />
+            <MalluableSmallStyledImage src={MalluableOneWEBP} />
+            <MalluableSmallStyledImage src={MalluableTwoWEBP} />
           </DoubleImage>
           <SingleImage>
-            <MalluableThreeSVGStyle />
+            <MalluableBigStyledImage src={MalluableThreeWEBP} />
           </SingleImage>
         </Images>
         <Divider />
@@ -152,7 +158,7 @@ const GraphicDesign = () => {
         />
         <Images>
           <SingleImage>
-            <AfterdarkSVGStyle />
+            <AfterdarkStyledImage src={AfterdarkWEBP} />
           </SingleImage>
         </Images>
         <Divider />
@@ -166,8 +172,8 @@ const GraphicDesign = () => {
         />
         <Images>
           <DoubleImage>
-            <MagazinesOneSVGStyle />
-            <MagazinesTwoSVGStyle />
+            <MagazinesStyledImage src={MagazinesOneWEBP} />
+            <MagazinesStyledImage src={MagazinesTwoWEBP} />
           </DoubleImage>
         </Images>
       </ProjectContainer>
