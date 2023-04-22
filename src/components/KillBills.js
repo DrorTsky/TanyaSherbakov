@@ -1,7 +1,101 @@
 /** @format */
-import { ProjectDescription, TextsImageRow } from "./ProjectParts";
-import { KillBillsOverviewStyledImage } from "./SvgStyles";
+import styled from "styled-components";
+import {
+  ProjectDescription,
+  TextsImageRow,
+  SectionHeader,
+  ParagraphText,
+  SectionBody,
+  DesriptionContainer,
+} from "./ProjectParts";
+import { Divider } from "./ProjectPreviewParts";
+import KillBillsUserWEBP from "../images/killbills - user.webp";
+import {
+  KillBillsOverviewStyledImage,
+  KillBillsUnderstandingStyledImage,
+  KillBillsPainPointsStyledImage,
+  KillBillsWireframeStyledImage,
+  KillBillsUiGuideStyledImage,
+  KillBillsMockupStyledImage,
+  KillBillsSketchStyledImage,
+} from "./SvgStyles";
+import KillBillsPainPointsWEBP from "../images/killbills-pain-points.webp";
 import KillBillsOverviewWEBP from "../images/killbills-overview.webp";
+import KillBillswireframeWEBP from "../images/killbills-starting-design.webp";
+import KillBillsUiGuideWEBP from "../images/killbills-ui-guide.webp";
+import KillBillsMockupOneWEBP from "../images/killbills-ui-guide-2.webp";
+import KillBillsMockupTwoWEBP from "../images/killbills-ui-guide-3.webp";
+import KillBillsSketchWEBP from "../images/killbills - sketch.webp";
+
+const UserSubHeader = styled.div`
+  font-style: normal;
+  font-weight: 450;
+  font-size: 32px;
+  line-height: 41px;
+  @media (max-width: 768px) {
+    font-size: 24px;
+    line-height: 31px;
+  }
+`;
+
+const Container = styled.div`
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 60px;
+  padding-inline: 107px;
+  @media (max-width: 768px) {
+    padding-inline: 15px;
+    gap: 50px;
+  }
+`;
+
+const StyledParagraphText = styled(ParagraphText)`
+  padding-inline: 202px;
+  text-align: center;
+  @media (max-width: 768px) {
+    padding-inline: unset;
+  }
+`;
+
+const StyledUserSubHeader = styled(UserSubHeader)`
+  @media (max-width: 768px) {
+    font-weight: 450;
+    font-size: 32px;
+    line-height: 41px;
+  }
+`;
+
+const StyledSectionBody = styled(SectionBody)`
+  align-items: center;
+  gap: 60px;
+  @media (max-width: 768px) {
+    gap: 50px;
+  }
+`;
+
+const StyledDesriptionContainer = styled(DesriptionContainer)`
+  width: 57%;
+  gap: unset;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+`;
+
+const StyledIframe = styled.iframe`
+  width: 393px;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  border: none;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+`;
+
+const IframeContainer = styled.div`
+  height: 100vh;
+`;
 
 export const KillBills = () => {
   return (
@@ -23,6 +117,65 @@ export const KillBills = () => {
           "KillBills provides its users a platform in which they can receive, monitor and pay their bills either separately or by splitting it between other users.",
         ]}
         image={<KillBillsOverviewStyledImage src={KillBillsOverviewWEBP} />}
+      />
+      <Container>
+        <SectionHeader>UNDERSTANDING THE USER</SectionHeader>
+        <UserSubHeader>User persona</UserSubHeader>
+        <KillBillsUnderstandingStyledImage src={KillBillsUserWEBP} />
+        <StyledParagraphText>
+          Chen lives in an apartment with his brother and he needs to split the
+          electricity bill with him because he wants their payments to be equal.
+        </StyledParagraphText>
+        <StyledUserSubHeader>Pain points</StyledUserSubHeader>
+        <KillBillsPainPointsStyledImage src={KillBillsPainPointsWEBP} />
+        <Divider />
+      </Container>
+      <Container>
+        <SectionHeader>STARTING THE DESIGN</SectionHeader>
+        <UserSubHeader>Wireframes</UserSubHeader>
+        <StyledSectionBody>
+          <StyledDesriptionContainer>
+            <span>
+              As the initial design phase continued, I made sure to base screen
+              designs on <strong>feedback</strong> and findings from{" "}
+              <strong>AB testing</strong>
+              while keeping in mind business needs and limitations.During the
+              testing I have found that
+              <strong>
+                users want to be able to pay a single bill with multiple payment
+                methods.
+              </strong>
+            </span>
+          </StyledDesriptionContainer>
+          <KillBillsWireframeStyledImage src={KillBillswireframeWEBP} />
+        </StyledSectionBody>
+        <UserSubHeader>UI Guide</UserSubHeader>
+        <KillBillsUiGuideStyledImage src={KillBillsUiGuideWEBP} />
+        <UserSubHeader>Mockups</UserSubHeader>
+        <KillBillsMockupStyledImage src={KillBillsMockupOneWEBP} />
+        <KillBillsMockupStyledImage src={KillBillsMockupTwoWEBP} />
+        <UserSubHeader>High - fidelity prototype</UserSubHeader>
+        <IframeContainer>
+          <StyledIframe
+            title="fidelity"
+            src="https://xd.adobe.com/embed/9892f7d9-5117-4481-b058-936df813788f-cdc1/?fullscreen"
+            frameborder="0"
+            allowfullscreen
+          />
+        </IframeContainer>
+        <Divider />
+      </Container>
+      <TextsImageRow
+        sectionHeaderText={"TAKEAWAYS"}
+        isHeaderInMobile={false}
+        isDivider={false}
+        headers={["Impact", "What I learned:", "Next steps"]}
+        texts={[
+          "The app provides an easy and accessible way to pay bills. One quote from peer feedback: “I can't wait to use the app! We so need it”",
+          "I learned how to work with an external business and to communicate and solve users' needs under business limitations.",
+          "• Conduct another round of usability studies to validate whether the pain points users experienced have been effectively addressed. <br>• Conduct more user research to determine any new areas of need.",
+        ]}
+        image={<KillBillsSketchStyledImage src={KillBillsSketchWEBP} />}
       />
     </div>
   );

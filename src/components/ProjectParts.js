@@ -3,7 +3,7 @@
 import styled from "styled-components";
 import { Divider } from "./ProjectPreviewParts";
 
-const SectionBody = styled.div`
+export const SectionBody = styled.div`
   display: flex;
   gap: 148px;
   @media (max-width: 768px) {
@@ -17,7 +17,7 @@ const ParagraphContainer = styled.div`
   gap: 24px;
 `;
 
-const DesriptionContainer = styled.div`
+export const DesriptionContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -46,7 +46,7 @@ const ParagraphHeader = styled.div`
     line-height: 31px;
   }
 `;
-const ParagraphText = styled.div`
+export const ParagraphText = styled.div`
   font-weight: 400;
   font-size: 24px;
   line-height: 31px;
@@ -144,6 +144,7 @@ export const TextsImageRow = ({
   headers,
   texts,
   image,
+  isDivider = true,
   isHeaderInMobile = true,
 }) => {
   const description = texts.map((text, index) => {
@@ -152,7 +153,11 @@ export const TextsImageRow = ({
         {headers?.[index] && (
           <ParagraphHeader>{headers?.[index]}</ParagraphHeader>
         )}
-        <ParagraphText>{text}</ParagraphText>
+        <ParagraphText
+          dangerouslySetInnerHTML={{
+            __html: text,
+          }}
+        />
       </ParagraphContainer>
     );
   });
@@ -165,7 +170,7 @@ export const TextsImageRow = ({
         <DesriptionContainer>{description}</DesriptionContainer>
         <ImageContainer>{image}</ImageContainer>
       </SectionBody>
-      <Divider />
+      {isDivider && <Divider />}
     </MainContainer>
   );
 };

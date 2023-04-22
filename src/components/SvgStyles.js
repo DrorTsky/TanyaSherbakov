@@ -213,3 +213,57 @@ export const KillBillsOverviewStyledImage = styled.img`
     height: 610px;
   }
 `;
+
+export const KillBillsUnderstandingStyledImage = styled.img`
+  width: 100%;
+  height: 1155.57px;
+  @media (max-width: 768px) {
+    height: 233.36px;
+  }
+`;
+
+export const KillBillsPainPointsStyledImage = styled.img`
+  width: 100%;
+  height: 532.23px;
+  @media (max-width: 768px) {
+    height: 151.49px;
+  }
+`;
+
+export const KillBillsWireframeStyledImage = styled.img`
+  width: 532px;
+  height: 474.4px;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    height: 294.27px;
+  }
+`;
+
+export const KillBillsUiGuideStyledImage = styled.img`
+  width: 1200px;
+  height: 675px;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    height: 185.62px;
+  }
+`;
+
+export const KillBillsMockupStyledImage = styled.img`
+  width: 100%;
+  height: 522px;
+
+  @media (max-width: 768px) {
+    height: 279px;
+  }
+`;
+
+export const KillBillsSketchStyledImage = styled.img`
+  width: 767px;
+  height: 575px;
+  @media (max-width: 768px) {
+    width: 330px;
+    height: 247.39px;
+  }
+`;
