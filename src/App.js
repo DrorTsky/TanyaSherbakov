@@ -7,6 +7,7 @@ import { Footer } from "./components/Footer";
 import Header from "./components/Header";
 import About from "./components/About";
 import GraphicDesign from "./components/GraphicDesign";
+import { MarketLog } from "./components/MarketLog";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/MarketLog" element={<MarketLog />} />
         <Route path="/about" element={<About />} />
         <Route path="/graphic-design" element={<GraphicDesign />} />
       </Routes>
