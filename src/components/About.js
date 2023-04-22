@@ -3,7 +3,8 @@
 import React from "react";
 import styled from "styled-components";
 import { Divider } from "./ProjectPreviewParts";
-import { AboutSVGStyle } from "./SvgStyles";
+import { AboutStyledImage } from "./SvgStyles";
+import AboutWEBP from "../images/about_wildheart.webp";
 
 const Container = styled.div`
   display: flex;
@@ -105,7 +106,7 @@ const About = () => {
             happy.
           </RegularText>
         </SummaryTextContainer>
-        <AboutSVGStyle />
+        <AboutStyledImage src={AboutWEBP} alt={"About"} />
       </SummaryContainer>
       <Divider />
       <InterestsContainer>
