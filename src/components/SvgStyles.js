@@ -57,53 +57,6 @@ export const PinkBlobSVGStyle = styled(PinkBlobSVG)`
   }
 `;
 
-// export const MarketLogWEBPStyle = styled(MarketLogWEBP)`
-//   pointer-events: none;
-//   @media (max-width: 768px) {
-//     height: 40%;
-//   }
-// `;
-
-// export const IchiWEBPStyle = styled(IchiWEBP)`
-//   pointer-events: none;
-//   @media (max-width: 768px) {
-//     height: 40%;
-//   }
-// `;
-
-// export const KillbillsWEBPStyle = styled(KillbillsWEBP)`
-//   pointer-events: none;
-//   @media (max-width: 768px) {
-//     height: 40%;
-//   }
-// `;
-
-// export const MaynoothWEBPStyle = styled(MaynoothWEBP)`
-//   pointer-events: none;
-//   @media (max-width: 768px) {
-//     height: 40%;
-//   }
-// `;
-
-// export const DoubleBlobWEBPStyle = styled(DoubleBlobWEBP)`
-//   width: 369px;
-//   height: 355px;
-//   @media (max-width: 768px) {
-//     width: 223px;
-//     height: 215px;
-//     align-self: center;
-//   }
-// `;
-
-// export const IsraelWEBPStyle = styled(IsraelWEBP)`
-//   width: 18px;
-//   height: 59px;
-//   @media (max-width: 768px) {
-//     width: 9px;
-//     height: 31px;
-//   }
-// `;
-
 export const ArrowSVGStyle = styled(ArrowSVG)`
   width: 36px;
   height: 46px;
@@ -113,15 +66,6 @@ export const ArrowSVGStyle = styled(ArrowSVG)`
   @media (max-width: 768px) {
   }
 `;
-
-// export const AboutWEBPStyle = styled(AboutWEBP)`
-//   width: 608px;
-//   height: 606px;
-//   @media (max-width: 768px) {
-//     width: 100%;
-//     height: 100%;
-//   }
-// `;
 
 export const MagazinesStyledImage = styled.img`
   width: 696px;
