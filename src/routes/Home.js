@@ -5,9 +5,12 @@ import { ProjectPreview } from "../components/ProjectPreviewParts";
 import { Container, ColumnContainer } from "../components/ProjectPreviewParts";
 import styled from "styled-components";
 import {
-  StyledImage,
   DoubleBlobStyledImage,
   IsraelStyledImage,
+  IchiPreviewStyledImage,
+  KillbillsPreviewStyledImage,
+  MaynoothPreviewStyledImage,
+  MarketlogPreviewStyledImage,
 } from "../components/SvgStyles";
 import MarketLogWEBPStyle from "../images/marketlog.webp";
 import IchiWEBPStyle from "../images/ichi.webp";
@@ -90,7 +93,10 @@ export const Home = () => {
         year={2022}
         blob={"blue"}
       >
-        <StyledImage src={MarketLogWEBPStyle} alt={"Market Log"} />
+        <MarketlogPreviewStyledImage
+          src={MarketLogWEBPStyle}
+          alt={"Market Log"}
+        />
       </ProjectPreview>
       <ProjectPreview
         text={
@@ -101,7 +107,10 @@ export const Home = () => {
         year={2022}
         blob={"pink"}
       >
-        <StyledImage src={KillbillsWEBPStyle} alt={"KillBills"} />
+        <KillbillsPreviewStyledImage
+          src={KillbillsWEBPStyle}
+          alt={"KillBills"}
+        />
       </ProjectPreview>
       <ProjectPreview
         text={
@@ -112,7 +121,7 @@ export const Home = () => {
         year={2021}
         blob={"blue"}
       >
-        <StyledImage src={IchiWEBPStyle} alt={"Ichi"} />
+        <IchiPreviewStyledImage src={IchiWEBPStyle} alt={"Ichi"} />
       </ProjectPreview>
       <ProjectPreview
         text={
@@ -123,7 +132,7 @@ export const Home = () => {
         year={2021}
         blob={"pink"}
       >
-        <StyledImage src={MaynoothWEBPStyle} alt={"Maynooth"} />
+        <MaynoothPreviewStyledImage src={MaynoothWEBPStyle} alt={"Maynooth"} />
       </ProjectPreview>
     </div>
   );
