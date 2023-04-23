@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/tanyasherbakov/static/css/main.8703f680.css",
-    "main.js": "/tanyasherbakov/static/js/main.27de3fd4.js",
+    "main.js": "/tanyasherbakov/static/js/main.fe5bf523.js",
     "static/js/787.08110660.chunk.js": "/tanyasherbakov/static/js/787.08110660.chunk.js",
     "static/media/Patzanki 6.webp": "/tanyasherbakov/static/media/Patzanki 6.1686a936da82102728a0.webp",
     "static/media/Magazines 2.webp": "/tanyasherbakov/static/media/Magazines 2.c3055611371b881dc4aa.webp",
@@ -67,11 +67,11 @@
     "static/media/blueBlob.svg": "/tanyasherbakov/static/media/blueBlob.678092202e957711e364e16d5a6ba9ef.svg",
     "static/media/pinkBlob.svg": "/tanyasherbakov/static/media/pinkBlob.9842ce05604828900a90d8e04017e4c1.svg",
     "main.8703f680.css.map": "/tanyasherbakov/static/css/main.8703f680.css.map",
-    "main.27de3fd4.js.map": "/tanyasherbakov/static/js/main.27de3fd4.js.map",
+    "main.fe5bf523.js.map": "/tanyasherbakov/static/js/main.fe5bf523.js.map",
     "787.08110660.chunk.js.map": "/tanyasherbakov/static/js/787.08110660.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8703f680.css",
-    "static/js/main.27de3fd4.js"
+    "static/js/main.fe5bf523.js"
   ]
 }
