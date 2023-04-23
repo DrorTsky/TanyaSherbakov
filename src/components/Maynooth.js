@@ -5,16 +5,8 @@ import {
   ProjectDescription,
   TextsImageRow,
   ParagraphHeader,
-  SectionHeader,
-  ParagraphText,
-  SubHeaderImage,
-  UserSubHeader,
   Container,
-  HeadersAndLists,
-  SideHeaderTextAndImage,
-  MainContainer,
 } from "./ProjectParts";
-import { Divider } from "./ProjectPreviewParts";
 import {
   MaynoothOverviewStyledImage,
   MaynoothUserStyledImage,
