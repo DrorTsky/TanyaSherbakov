@@ -7,6 +7,9 @@ import {
   ParagraphText,
   SectionBody,
   DesriptionContainer,
+  Container,
+  UserSubHeader,
+  SubHeaderImage,
 } from "./ProjectParts";
 import { Divider } from "./ProjectPreviewParts";
 import KillBillsUserWEBP from "../images/killbills - user.webp";
@@ -26,29 +29,6 @@ import KillBillsUiGuideWEBP from "../images/killbills-ui-guide.webp";
 import KillBillsMockupOneWEBP from "../images/killbills-ui-guide-2.webp";
 import KillBillsMockupTwoWEBP from "../images/killbills-ui-guide-3.webp";
 import KillBillsSketchWEBP from "../images/killbills - sketch.webp";
-
-const UserSubHeader = styled.div`
-  font-style: normal;
-  font-weight: 450;
-  font-size: 32px;
-  line-height: 41px;
-  @media (max-width: 768px) {
-    font-size: 24px;
-    line-height: 31px;
-  }
-`;
-
-const Container = styled.div`
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  gap: 60px;
-  padding-inline: 107px;
-  @media (max-width: 768px) {
-    padding-inline: 15px;
-    gap: 50px;
-  }
-`;
 
 const StyledParagraphText = styled(ParagraphText)`
   padding-inline: 202px;
@@ -149,11 +129,17 @@ export const KillBills = () => {
           </StyledDesriptionContainer>
           <KillBillsWireframeStyledImage src={KillBillswireframeWEBP} />
         </StyledSectionBody>
-        <UserSubHeader>UI Guide</UserSubHeader>
-        <KillBillsUiGuideStyledImage src={KillBillsUiGuideWEBP} />
-        <UserSubHeader>Mockups</UserSubHeader>
-        <KillBillsMockupStyledImage src={KillBillsMockupOneWEBP} />
-        <KillBillsMockupStyledImage src={KillBillsMockupTwoWEBP} />
+        <SubHeaderImage
+          subheader={"UI Guide"}
+          images={[<KillBillsUiGuideStyledImage src={KillBillsUiGuideWEBP} />]}
+        />
+        <SubHeaderImage
+          subheader={"Mockups"}
+          images={[
+            <KillBillsMockupStyledImage src={KillBillsMockupOneWEBP} />,
+            <KillBillsMockupStyledImage src={KillBillsMockupTwoWEBP} />,
+          ]}
+        />
         <UserSubHeader>High - fidelity prototype</UserSubHeader>
         <IframeContainer>
           <StyledIframe

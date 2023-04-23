@@ -267,3 +267,86 @@ export const KillBillsSketchStyledImage = styled.img`
     height: 247.39px;
   }
 `;
+
+export const IchiOverviewStyledImage = styled.img`
+  width: 666px;
+  height: 803px;
+  @media (max-width: 768px) {
+    width: 330px;
+    height: 397.88px;
+  }
+`;
+
+export const IchiUserStyledImage = styled.img`
+  width: 100%;
+  height: 963.97px;
+  @media (max-width: 768px) {
+    height: 194.56px;
+  }
+`;
+
+export const IchiMapStyledImage = styled.img`
+  width: 100%;
+  height: 837.09px;
+  @media (max-width: 768px) {
+    height: 168.95px;
+  }
+`;
+
+export const IchiWireframeStyledImage = styled.img`
+  width: 650px;
+  height: 428.77px;
+  @media (max-width: 768px) {
+    width: 100%;
+    height: 217.68px;
+  }
+`;
+
+export const IchiDigitalStyledImage = styled.img`
+  width: 748px;
+  height: 689px;
+  @media (max-width: 768px) {
+    width: 330px;
+    height: 303.97px;
+  }
+`;
+
+export const IchiLowFidelityStyledImage = styled.img`
+  width: 879px;
+  height: 414px;
+
+  @media (max-width: 768px) {
+    width: 330px;
+    height: 155.43px;
+  }
+`;
+
+export const IchiBeforeAfterStyledImage = styled.img`
+  width: 695px;
+  height: 640px;
+
+  @media (max-width: 768px) {
+    width: 330px;
+    height: 303.88px;
+  }
+`;
+
+export const IchiMockupStyledImage = styled.img`
+  width: 1635px;
+  height: 1226.25px;
+
+  @media (max-width: 768px) {
+    width: 330px;
+    height: 247.5px;
+  }
+`;
+
+export const IchiHighfidelityStyledImage = styled.img`
+  width: 879px;
+  height: 414px;
+
+  @media (max-width: 768px) {
+    width: 330px;
+    height: 247.5px;
+  }
+`;

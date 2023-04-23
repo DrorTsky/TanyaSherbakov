@@ -116,7 +116,7 @@ export const Home = () => {
         text={
           "Marketlog offers an online community & provides the user with tools to track, compare and analyze their trading activity."
         }
-        link={"/about"}
+        link={"/Ichi"}
         name={"Ichi Sushi"}
         year={2021}
         blob={"blue"}
