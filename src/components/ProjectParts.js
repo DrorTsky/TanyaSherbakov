@@ -57,16 +57,17 @@ export const DesriptionContainer = styled.div`
   }
 `;
 const ImageContainer = styled.div`
-  width: 50%;
+  display: flex;
+  width: ${({ isDescription }) => (isDescription ? "50%" : "100%")};
+  ${({ isDescription }) => (isDescription ? "" : "justify-content: center;")}
   height: inherit;
   @media (max-width: 768px) {
-    display: flex;
     justify-content: center;
     width: 100%;
   }
 `;
 
-const ParagraphHeader = styled.div`
+export const ParagraphHeader = styled.div`
   font-weight: 450;
   font-size: 32px;
   line-height: 41px;
@@ -177,15 +178,20 @@ export const ProjectDescription = ({
   sectionHeaderText,
   dateRange,
   description,
+  projectType = "Product Design",
 }) => {
   return (
     <ProjectDescriptionContainer>
       <SectionHeader>{sectionHeaderText} </SectionHeader>
       <ProjectDescriptionTextContainer>
         <ProjectDescriptionText>
-          Product Design | {dateRange}
+          {projectType} | {dateRange}
         </ProjectDescriptionText>
-        <ProjectDescriptionText>{description}</ProjectDescriptionText>
+        <ProjectDescriptionText
+          dangerouslySetInnerHTML={{
+            __html: description,
+          }}
+        />
       </ProjectDescriptionTextContainer>
     </ProjectDescriptionContainer>
   );
@@ -201,7 +207,7 @@ export const TextsImageRow = ({
   isDivider = true,
   isHeaderInMobile = true,
 }) => {
-  const description = texts.map((text, index) => {
+  const description = texts?.map((text, index) => {
     return (
       <ParagraphContainer key={index}>
         {headers?.[index] && (
@@ -229,17 +235,23 @@ export const TextsImageRow = ({
     );
   });
 
+  const isDescription = description || displayLinks;
+
   return (
     <MainContainer>
       <SectionHeader isHeaderInMobile={isHeaderInMobile}>
         {sectionHeaderText}
       </SectionHeader>
       <SectionBody>
-        <DesriptionContainer isTextCenter={isTextCenter} isImage={image}>
-          {description}
-          {links && displayLinks}
-        </DesriptionContainer>
-        {image && <ImageContainer>{image}</ImageContainer>}
+        {isDescription && (
+          <DesriptionContainer isTextCenter={isTextCenter} isImage={image}>
+            {description}
+            {links && displayLinks}
+          </DesriptionContainer>
+        )}
+        {image && (
+          <ImageContainer isDescription={isDescription}>{image}</ImageContainer>
+        )}
       </SectionBody>
       {isDivider && <Divider />}
     </MainContainer>
@@ -286,4 +298,46 @@ export const HeadersAndLists = ({ items }) => {
     );
   });
   return <InlineLessContainer>{allItems}</InlineLessContainer>;
+};
+
+const SummaryContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  width: 100%;
+  @media (max-width: 768px) {
+    gap: 50px;
+  }
+`;
+
+const StyledUserSubHeader = styled(UserSubHeader)`
+  @media (max-width: 768px) {
+    align-self: center;
+  }
+`;
+
+export const SideHeaderTextAndImage = (props) => {
+  return (
+    <>
+      {props.isTextsImageRow ? (
+        <>
+          <TextsImageRow {...props} />
+        </>
+      ) : (
+        <>
+          {(props.header || props.text) && (
+            <SummaryContainer>
+              <StyledUserSubHeader>{props.header}</StyledUserSubHeader>
+              <ParagraphText
+                dangerouslySetInnerHTML={{
+                  __html: props.text,
+                }}
+              />
+            </SummaryContainer>
+          )}
+          <SubHeaderImage subheader={props.imageHeader} images={props.images} />{" "}
+        </>
+      )}
+    </>
+  );
 };

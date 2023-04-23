@@ -84,7 +84,7 @@ export const KillBills = () => {
         sectionHeaderText={"KILLBILLS"}
         dateRange={"November 2021 - January 2022"}
         description={
-          "designed this app for a client, as part of a user experience course on behalf of Apple Seeds Academy. As part of the project I was responsible for understanding the needs of the users, developing and designing a platform that meets these needs while maintaining customer requirements and existing constraints. Tools used: Photoshop, Adobe XD, pen and paper"
+          "designed this app for a client, as part of a user experience course on behalf of Apple Seeds Academy. As part of the project I was responsible for understanding the needs of the users, developing and designing a platform that meets these needs while maintaining customer requirements and existing constraints. <br>Tools used: Photoshop, Adobe XD, pen and paper"
         }
       />
       <TextsImageRow
@@ -153,7 +153,6 @@ export const KillBills = () => {
       </Container>
       <TextsImageRow
         sectionHeaderText={"TAKEAWAYS"}
-        isHeaderInMobile={false}
         isDivider={false}
         headers={["Impact", "What I learned:", "Next steps"]}
         texts={[

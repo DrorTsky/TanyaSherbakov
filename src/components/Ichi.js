@@ -4,8 +4,7 @@ import {
   ProjectDescription,
   TextsImageRow,
   SectionHeader,
-  ParagraphText,
-  SubHeaderImage,
+  SideHeaderTextAndImage,
   UserSubHeader,
   Container,
   HeadersAndLists,
@@ -36,22 +35,6 @@ import IchiMockupWEBP from "../images/Ichi-mockups-3.webp";
 import IchiHighfidelityWEBP from "../images/Ichi-highfidelity.webp";
 import IchiaccessibilityWEBP from "../images/Ichi-accesability.webp";
 import { Divider } from "./ProjectPreviewParts";
-
-const SummaryContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 60px;
-  width: 100%;
-  @media (max-width: 768px) {
-    gap: 50px;
-  }
-`;
-
-const StyledUserSubHeader = styled(UserSubHeader)`
-  @media (max-width: 768px) {
-    align-self: center;
-  }
-`;
 
 const DigitalWireframesContainer = styled.div`
   display: flex;
@@ -147,12 +130,11 @@ const Ichi = () => {
         sectionHeaderText={"ICHI"}
         dateRange={"May - June 2021"}
         description={
-          "This project was for my UX Design certificate at Google. The objective of the course was to learn how to design an app, from conception to delivery, to provide a better user experience. I completed this project over the course of6 weeks, and learned an incredible amount about design process. Tools used: Illustrator, Photoshop, Figma, pen and paper."
+          "This project was for my UX Design certificate at Google. The objective of the course was to learn how to design an app, from conception to delivery, to provide a better user experience. I completed this project over the course of 6 weeks, and learned an incredible amount about design process. <br>Tools used: Illustrator, Photoshop, Figma, pen and paper."
         }
       />
       <TextsImageRow
         sectionHeaderText={"PROJECT OVERVIEW"}
-        isHeaderInMobile={false}
         headers={["The product", "The problems", "The goal", "The solution"]}
         texts={[
           "Ichi is a regional sushi restaurant that strives to deliver healthy, specialty sushi and side dishes. They offer a wide spectrum of competitive pricing. Ichi targets customers like commuters and workers who lack the time or ability to prepare a family dinner.",
@@ -169,7 +151,6 @@ const Ichi = () => {
       </Container>
       <TextsImageRow
         sectionHeaderText={"STARTING THE DESIGN"}
-        isHeaderInMobile={false}
         isTextCenter={true}
         headers={["Paper wireframes"]}
         texts={[
@@ -192,7 +173,6 @@ const Ichi = () => {
         />
       </Container>
       <TextsImageRow
-        isHeaderInMobile={false}
         isTextCenter={true}
         headers={["Low-fidelity prototype"]}
         texts={[
@@ -226,32 +206,6 @@ const Ichi = () => {
         ]}
       />
     </div>
-  );
-};
-
-const SideHeaderTextAndImage = (props) => {
-  return (
-    <>
-      {props.isTextsImageRow ? (
-        <>
-          <TextsImageRow {...props} />
-        </>
-      ) : (
-        <>
-          {(props.header || props.text) && (
-            <SummaryContainer>
-              <StyledUserSubHeader>{props.header}</StyledUserSubHeader>
-              <ParagraphText
-                dangerouslySetInnerHTML={{
-                  __html: props.text,
-                }}
-              />
-            </SummaryContainer>
-          )}
-          <SubHeaderImage subheader={props.imageHeader} images={props.images} />{" "}
-        </>
-      )}
-    </>
   );
 };
 

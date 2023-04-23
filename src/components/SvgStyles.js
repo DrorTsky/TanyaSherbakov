@@ -350,3 +350,103 @@ export const IchiHighfidelityStyledImage = styled.img`
     height: 247.5px;
   }
 `;
+
+export const MaynoothOverviewStyledImage = styled.img`
+  width: 777px;
+  height: 493.4px;
+
+  @media (max-width: 768px) {
+    width: 330px;
+    height: 209.55px;
+  }
+`;
+
+export const MaynoothUserStyledImage = styled.img`
+  width: 1066px;
+  height: 662px;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    height: 100%;
+  }
+`;
+
+export const MaynoothWireframeStyledImage = styled.img`
+  width: 777px;
+  height: 510.23px;
+
+  @media (max-width: 768px) {
+    width: 330px;
+    height: 216.7px;
+  }
+`;
+
+export const MaynoothDigitalWireframeStyledImage = styled.img`
+  width: 777px;
+  height: 942.11px;
+
+  @media (max-width: 768px) {
+    width: 330px;
+    height: 400.12px;
+  }
+`;
+
+export const MaynoothLowFidelityStyledImage = styled.img`
+  width: 777px;
+  height: 374.41px;
+
+  @media (max-width: 768px) {
+    width: 330px;
+    height: 159.01px;
+  }
+`;
+
+export const MaynoothMoodboardStyledImage = styled.img`
+  width: 777px;
+  height: 437.06px;
+
+  @media (max-width: 768px) {
+    width: 330px;
+    height: 185.62px;
+  }
+`;
+
+export const MaynoothStyleGuideStyledImage = styled.img`
+  width: 1164px;
+  height: 395px;
+
+  @media (max-width: 768px) {
+    width: 330px;
+    height: 111.98px;
+  }
+`;
+
+export const MaynoothMockupStyledImage = styled.img`
+  width: 777.5px;
+  height: 967.21px;
+
+  @media (max-width: 768px) {
+    width: 330px;
+    height: 311.34px;
+  }
+`;
+
+export const MaynoothHighFidelityStyledImage = styled.img`
+  width: 777px;
+  height: 312.14px;
+
+  @media (max-width: 768px) {
+    width: 330px;
+    height: 132.57px;
+  }
+`;
+
+export const MaynoothTakeawaysStyledImage = styled.img`
+  width: 777px;
+  height: 518px;
+
+  @media (max-width: 768px) {
+    width: 330px;
+    height: 220px;
+  }
+`;
