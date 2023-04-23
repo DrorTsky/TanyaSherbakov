@@ -1,6 +1,8 @@
 /** @format */
 
 import "./App.css";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import { Home } from "./routes/Home";
 import { Routes, Route } from "react-router-dom";
 import { Footer } from "./components/Footer";
@@ -12,9 +14,20 @@ import { KillBills } from "./components/KillBills";
 import Ichi from "./components/Ichi";
 import Maynooth from "./components/Maynooth";
 
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
+
 function App() {
   return (
     <>
+      <ScrollToTop />
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
