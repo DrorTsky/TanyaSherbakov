@@ -6,7 +6,11 @@ import { ReactComponent as BlueBlobSVG } from "../images/blueBlob.svg";
 import { ReactComponent as PinkBlobSVG } from "../images/pinkBlob.svg";
 import { ReactComponent as ArrowSVG } from "../images/arrow.svg";
 
-export const OverviewStyledImage = styled.img`
+const ImageStyle = styled.img`
+  user-select: none;
+`;
+
+export const OverviewStyledImage = styled(ImageStyle)`
   width: 50%;
   @media (max-width: 768px) {
     width: 330px;
@@ -15,7 +19,7 @@ export const OverviewStyledImage = styled.img`
   }
 `;
 
-export const UnderstandingStyledImage = styled.img`
+export const UnderstandingStyledImage = styled(ImageStyle)`
   height: 641px;
   width: 493px;
 
@@ -64,7 +68,7 @@ export const ArrowSVGStyle = styled(ArrowSVG)`
   }
 `;
 
-export const MagazinesStyledImage = styled.img`
+export const MagazinesStyledImage = styled(ImageStyle)`
   width: 696px;
   height: 522px;
   @media (max-width: 768px) {
@@ -73,7 +77,7 @@ export const MagazinesStyledImage = styled.img`
   }
 `;
 
-export const AfterdarkStyledImage = styled.img`
+export const AfterdarkStyledImage = styled(ImageStyle)`
   height: 1087px;
   width: 1449px;
 
@@ -83,7 +87,7 @@ export const AfterdarkStyledImage = styled.img`
   }
 `;
 
-export const MarketlogPreviewStyledImage = styled.img`
+export const MarketlogPreviewStyledImage = styled(ImageStyle)`
   pointer-events: none;
   width: 1136px;
   height: 618px;
@@ -93,7 +97,7 @@ export const MarketlogPreviewStyledImage = styled.img`
   }
 `;
 
-export const KillbillsPreviewStyledImage = styled.img`
+export const KillbillsPreviewStyledImage = styled(ImageStyle)`
   pointer-events: none;
   width: 1359.19px;
   height: 618px;
@@ -103,7 +107,7 @@ export const KillbillsPreviewStyledImage = styled.img`
   }
 `;
 
-export const MaynoothPreviewStyledImage = styled.img`
+export const MaynoothPreviewStyledImage = styled(ImageStyle)`
   pointer-events: none;
   width: 1275px;
   height: 809px;
@@ -113,7 +117,7 @@ export const MaynoothPreviewStyledImage = styled.img`
   }
 `;
 
-export const IchiPreviewStyledImage = styled.img`
+export const IchiPreviewStyledImage = styled(ImageStyle)`
   pointer-events: none;
   width: 930px;
   height: 839px;
@@ -123,7 +127,7 @@ export const IchiPreviewStyledImage = styled.img`
   }
 `;
 
-export const DoubleBlobStyledImage = styled.img`
+export const DoubleBlobStyledImage = styled(ImageStyle)`
   width: 369px;
   height: 355px;
   @media (max-width: 768px) {
@@ -133,7 +137,7 @@ export const DoubleBlobStyledImage = styled.img`
   }
 `;
 
-export const IsraelStyledImage = styled.img`
+export const IsraelStyledImage = styled(ImageStyle)`
   width: 18px;
   height: 59px;
   @media (max-width: 768px) {
@@ -142,7 +146,7 @@ export const IsraelStyledImage = styled.img`
   }
 `;
 
-export const AboutStyledImage = styled.img`
+export const AboutStyledImage = styled(ImageStyle)`
   width: 608px;
   height: 606px;
   @media (max-width: 768px) {
@@ -151,7 +155,7 @@ export const AboutStyledImage = styled.img`
   }
 `;
 
-export const BigPatzankiStyledImage = styled.img`
+export const BigPatzankiStyledImage = styled(ImageStyle)`
   width: 525.27px;
   height: 743px;
   @media (max-width: 768px) {
@@ -160,7 +164,7 @@ export const BigPatzankiStyledImage = styled.img`
   }
 `;
 
-export const SmallPatzankiStyledImage = styled.img`
+export const SmallPatzankiStyledImage = styled(ImageStyle)`
   width: 525.04px;
   height: 317px;
   @media (max-width: 768px) {
@@ -169,7 +173,7 @@ export const SmallPatzankiStyledImage = styled.img`
   }
 `;
 
-export const MalluableSmallStyledImage = styled.img`
+export const MalluableSmallStyledImage = styled(ImageStyle)`
   width: 696px;
   height: 522px;
   @media (max-width: 768px) {
@@ -178,7 +182,7 @@ export const MalluableSmallStyledImage = styled.img`
   }
 `;
 
-export const MalluableBigStyledImage = styled.img`
+export const MalluableBigStyledImage = styled(ImageStyle)`
   width: 1447px;
   height: 1085.25px;
   @media (max-width: 768px) {
@@ -187,7 +191,7 @@ export const MalluableBigStyledImage = styled.img`
   }
 `;
 
-export const MarketlogResultBigStyledImage = styled.img`
+export const MarketlogResultBigStyledImage = styled(ImageStyle)`
   width: 862px;
   height: 522px;
   @media (max-width: 768px) {
@@ -196,7 +200,7 @@ export const MarketlogResultBigStyledImage = styled.img`
   }
 `;
 
-export const MarketlogResultSmallStyledImage = styled.img`
+export const MarketlogResultSmallStyledImage = styled(ImageStyle)`
   width: 282px;
   height: 522px;
   @media (max-width: 768px) {
@@ -205,7 +209,7 @@ export const MarketlogResultSmallStyledImage = styled.img`
   }
 `;
 
-export const KillBillsOverviewStyledImage = styled.img`
+export const KillBillsOverviewStyledImage = styled(ImageStyle)`
   width: 488.83px;
   height: 905px;
   @media (max-width: 768px) {
@@ -214,7 +218,7 @@ export const KillBillsOverviewStyledImage = styled.img`
   }
 `;
 
-export const KillBillsUnderstandingStyledImage = styled.img`
+export const KillBillsUnderstandingStyledImage = styled(ImageStyle)`
   width: 100%;
   height: 1155.57px;
   @media (max-width: 768px) {
@@ -222,15 +226,16 @@ export const KillBillsUnderstandingStyledImage = styled.img`
   }
 `;
 
-export const KillBillsPainPointsStyledImage = styled.img`
-  width: 100%;
-  height: 532.23px;
+export const KillBillsPainPointsStyledImage = styled(ImageStyle)`
+  width: 1157.5px;
+  height: 518.43px;
   @media (max-width: 768px) {
+    width: 330px;
     height: 151.49px;
   }
 `;
 
-export const KillBillsWireframeStyledImage = styled.img`
+export const KillBillsWireframeStyledImage = styled(ImageStyle)`
   width: 532px;
   height: 474.4px;
 
@@ -240,7 +245,7 @@ export const KillBillsWireframeStyledImage = styled.img`
   }
 `;
 
-export const KillBillsUiGuideStyledImage = styled.img`
+export const KillBillsUiGuideStyledImage = styled(ImageStyle)`
   width: 1200px;
   height: 675px;
 
@@ -250,7 +255,7 @@ export const KillBillsUiGuideStyledImage = styled.img`
   }
 `;
 
-export const KillBillsMockupStyledImage = styled.img`
+export const KillBillsMockupStyledImage = styled(ImageStyle)`
   width: 100%;
   height: 522px;
 
@@ -259,7 +264,7 @@ export const KillBillsMockupStyledImage = styled.img`
   }
 `;
 
-export const KillBillsSketchStyledImage = styled.img`
+export const KillBillsSketchStyledImage = styled(ImageStyle)`
   width: 767px;
   height: 575px;
   @media (max-width: 768px) {
@@ -268,7 +273,7 @@ export const KillBillsSketchStyledImage = styled.img`
   }
 `;
 
-export const IchiOverviewStyledImage = styled.img`
+export const IchiOverviewStyledImage = styled(ImageStyle)`
   width: 666px;
   height: 803px;
   @media (max-width: 768px) {
@@ -277,7 +282,7 @@ export const IchiOverviewStyledImage = styled.img`
   }
 `;
 
-export const IchiUserStyledImage = styled.img`
+export const IchiUserStyledImage = styled(ImageStyle)`
   width: 100%;
   height: 963.97px;
   @media (max-width: 768px) {
@@ -285,7 +290,7 @@ export const IchiUserStyledImage = styled.img`
   }
 `;
 
-export const IchiMapStyledImage = styled.img`
+export const IchiMapStyledImage = styled(ImageStyle)`
   width: 100%;
   height: 837.09px;
   @media (max-width: 768px) {
@@ -293,7 +298,7 @@ export const IchiMapStyledImage = styled.img`
   }
 `;
 
-export const IchiWireframeStyledImage = styled.img`
+export const IchiWireframeStyledImage = styled(ImageStyle)`
   width: 650px;
   height: 428.77px;
   @media (max-width: 768px) {
@@ -302,7 +307,7 @@ export const IchiWireframeStyledImage = styled.img`
   }
 `;
 
-export const IchiDigitalStyledImage = styled.img`
+export const IchiDigitalStyledImage = styled(ImageStyle)`
   width: 748px;
   height: 689px;
   @media (max-width: 768px) {
@@ -311,7 +316,7 @@ export const IchiDigitalStyledImage = styled.img`
   }
 `;
 
-export const IchiLowFidelityStyledImage = styled.img`
+export const IchiLowFidelityStyledImage = styled(ImageStyle)`
   width: 879px;
   height: 414px;
 
@@ -321,7 +326,7 @@ export const IchiLowFidelityStyledImage = styled.img`
   }
 `;
 
-export const IchiBeforeAfterStyledImage = styled.img`
+export const IchiBeforeAfterStyledImage = styled(ImageStyle)`
   width: 695px;
   height: 640px;
 
@@ -331,7 +336,7 @@ export const IchiBeforeAfterStyledImage = styled.img`
   }
 `;
 
-export const IchiMockupStyledImage = styled.img`
+export const IchiMockupStyledImage = styled(ImageStyle)`
   width: 1635px;
   height: 1226.25px;
 
@@ -341,7 +346,7 @@ export const IchiMockupStyledImage = styled.img`
   }
 `;
 
-export const IchiHighfidelityStyledImage = styled.img`
+export const IchiHighfidelityStyledImage = styled(ImageStyle)`
   width: 879px;
   height: 414px;
 
@@ -351,7 +356,7 @@ export const IchiHighfidelityStyledImage = styled.img`
   }
 `;
 
-export const MaynoothOverviewStyledImage = styled.img`
+export const MaynoothOverviewStyledImage = styled(ImageStyle)`
   width: 777px;
   height: 493.4px;
 
@@ -361,7 +366,7 @@ export const MaynoothOverviewStyledImage = styled.img`
   }
 `;
 
-export const MaynoothUserStyledImage = styled.img`
+export const MaynoothUserStyledImage = styled(ImageStyle)`
   width: 1066px;
   height: 662px;
 
@@ -371,7 +376,7 @@ export const MaynoothUserStyledImage = styled.img`
   }
 `;
 
-export const MaynoothWireframeStyledImage = styled.img`
+export const MaynoothWireframeStyledImage = styled(ImageStyle)`
   width: 777px;
   height: 510.23px;
 
@@ -381,7 +386,7 @@ export const MaynoothWireframeStyledImage = styled.img`
   }
 `;
 
-export const MaynoothDigitalWireframeStyledImage = styled.img`
+export const MaynoothDigitalWireframeStyledImage = styled(ImageStyle)`
   width: 777px;
   height: 942.11px;
 
@@ -391,7 +396,7 @@ export const MaynoothDigitalWireframeStyledImage = styled.img`
   }
 `;
 
-export const MaynoothLowFidelityStyledImage = styled.img`
+export const MaynoothLowFidelityStyledImage = styled(ImageStyle)`
   width: 777px;
   height: 374.41px;
 
@@ -401,7 +406,7 @@ export const MaynoothLowFidelityStyledImage = styled.img`
   }
 `;
 
-export const MaynoothMoodboardStyledImage = styled.img`
+export const MaynoothMoodboardStyledImage = styled(ImageStyle)`
   width: 777px;
   height: 437.06px;
 
@@ -411,7 +416,7 @@ export const MaynoothMoodboardStyledImage = styled.img`
   }
 `;
 
-export const MaynoothStyleGuideStyledImage = styled.img`
+export const MaynoothStyleGuideStyledImage = styled(ImageStyle)`
   width: 1164px;
   height: 395px;
 
@@ -421,7 +426,7 @@ export const MaynoothStyleGuideStyledImage = styled.img`
   }
 `;
 
-export const MaynoothMockupStyledImage = styled.img`
+export const MaynoothMockupStyledImage = styled(ImageStyle)`
   width: 777.5px;
   height: 967.21px;
 
@@ -431,7 +436,7 @@ export const MaynoothMockupStyledImage = styled.img`
   }
 `;
 
-export const MaynoothHighFidelityStyledImage = styled.img`
+export const MaynoothHighFidelityStyledImage = styled(ImageStyle)`
   width: 777px;
   height: 312.14px;
 
@@ -441,7 +446,7 @@ export const MaynoothHighFidelityStyledImage = styled.img`
   }
 `;
 
-export const MaynoothTakeawaysStyledImage = styled.img`
+export const MaynoothTakeawaysStyledImage = styled(ImageStyle)`
   width: 777px;
   height: 518px;
 
