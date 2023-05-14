@@ -1,6 +1,6 @@
 /** @format */
 
-import React from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import MalluableOneWEBP from "../images/Malluable 1.webp";
 import MalluableTwoWEBP from "../images/Malluable 2.webp";
@@ -54,8 +54,8 @@ const Headline = styled.div`
 const Description = styled.div`
   font-style: normal;
   font-weight: 400;
-  font-size: 36px;
-  line-height: 46px;
+  font-size: 24px;
+  line-height: 31px;
   text-align: center;
   color: #000000;
   @media (max-width: 768px) {
@@ -96,20 +96,47 @@ const Project = ({ headline, description, children }) => {
   return (
     <Container>
       <Headline>{headline}</Headline>
-      <Description>{description}</Description>
+      <Description
+        dangerouslySetInnerHTML={{
+          __html: description,
+        }}
+      />
     </Container>
   );
 };
 
+const useMobileScreen = () => {
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    // Clean up event listener on component unmount
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []); // Empty array ensures that effect is only run on mount and unmount
+
+  return isMobile;
+};
+
 const GraphicDesign = () => {
+  const isMobile = useMobileScreen();
+
   return (
     <>
       <ProjectContainer>
         <Project
           headline={"PATZANKI"}
-          description={
-            "Conceptual rebranding of a Russian reality show using 2021 graphic design trends. ABOUT THE SHOW It is believed that the female representative should be educated, tidy, tender and cultural, but whether it goes beyond normal if the girls do not meet the declared criteria? Usually, such women quickly become outcasts in society, they are shown with a finger, and no one wants to figure out what led girls to such a lifetime. But now they no longer want to live in the same life and go towards fundamental changes. - Coppershop Tools: Photoshop | October 2021"
-          }
+          description={`Conceptual rebranding of a Russian reality show using 2021 graphic design trends. ${
+            isMobile ? "" : "<br>"
+          }<br> About the show: <br>It is believed that the female representative should be educated, tidy, tender and cultural, but whether it goes beyond normal if the girls do not meet the declared criteria? Usually, such women quickly become outcasts in society, they are shown with a finger, and no one wants to figure out what led girls to such a lifetime. But now they no longer want to live in the same life and go towards fundamental changes. - Coppershop ${
+            isMobile ? "" : "<br>"
+          }<br>Tools: Photoshop | October 2021`}
         />
         <Images>
           <DoubleImage>
