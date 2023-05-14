@@ -114,7 +114,7 @@ export const Home = () => {
       </ProjectPreview>
       <ProjectPreview
         text={
-          "Marketlog offers an online community & provides the user with tools to track, compare and analyze their trading activity."
+          "Ichi is a regional sushi restaurant that strives to deliver healthy, specialty sushi and side dishes. Ichi targets customers like commuters and workers who lack the time or ability to prepare a family dinner."
         }
         link={"/Ichi"}
         name={"Ichi Sushi"}
@@ -125,7 +125,7 @@ export const Home = () => {
       </ProjectPreview>
       <ProjectPreview
         text={
-          "The platform provides an easy to use, fast and Eco – friendly way for people to pay their bills by gathering them all in one app disregarding payment vouchers."
+          "Maynooth Furniture is a new business selling affordable high-end design furniture made in Ireland."
         }
         link={"/Maynooth"}
         name={"Maynooth"}
