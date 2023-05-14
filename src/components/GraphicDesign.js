@@ -42,9 +42,10 @@ const DoubleImage = styled.div`
 `;
 const Headline = styled.div`
   font-style: normal;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 36px;
   line-height: 46px;
+  text-align: center;
   color: #000000;
   @media (max-width: 768px) {
     font-size: 24px;
@@ -68,6 +69,7 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  ${(props) => (props.gap ? `gap: ${props.gap}px` : "")}
 `;
 
 const Images = styled.div`
@@ -92,9 +94,9 @@ const ProjectContainer = styled.div`
     padding-inline: 15px;
   }
 `;
-const Project = ({ headline, description, children }) => {
+const Project = ({ headline, description, gap = 26 }) => {
   return (
-    <Container>
+    <Container gap={gap}>
       <Headline>{headline}</Headline>
       <Description
         dangerouslySetInnerHTML={{
@@ -131,6 +133,7 @@ const GraphicDesign = () => {
     <>
       <ProjectContainer>
         <Project
+          gap={""}
           headline={"PATZANKI"}
           description={`Conceptual rebranding of a Russian reality show using 2021 graphic design trends. ${
             isMobile ? "" : "<br>"
@@ -140,20 +143,44 @@ const GraphicDesign = () => {
         />
         <Images>
           <DoubleImage>
-            <BigPatzankiStyledImage src={PartizankiOneWEBP} />
-            <BigPatzankiStyledImage src={PartizankiTwoWEBP} />
+            <BigPatzankiStyledImage
+              onContextMenu={(e) => e.preventDefault()}
+              src={PartizankiOneWEBP}
+            />
+            <BigPatzankiStyledImage
+              onContextMenu={(e) => e.preventDefault()}
+              src={PartizankiTwoWEBP}
+            />
           </DoubleImage>
           <DoubleImage>
-            <SmallPatzankiStyledImage src={PartizankiThreeWEBP} />
-            <SmallPatzankiStyledImage src={PartizankiFourWEBP} />
+            <SmallPatzankiStyledImage
+              onContextMenu={(e) => e.preventDefault()}
+              src={PartizankiThreeWEBP}
+            />
+            <SmallPatzankiStyledImage
+              onContextMenu={(e) => e.preventDefault()}
+              src={PartizankiFourWEBP}
+            />
           </DoubleImage>
           <DoubleImage>
-            <SmallPatzankiStyledImage src={PartizankiFiveWEBP} />
-            <SmallPatzankiStyledImage src={PartizankiSixWEBP} />
+            <SmallPatzankiStyledImage
+              onContextMenu={(e) => e.preventDefault()}
+              src={PartizankiFiveWEBP}
+            />
+            <SmallPatzankiStyledImage
+              onContextMenu={(e) => e.preventDefault()}
+              src={PartizankiSixWEBP}
+            />
           </DoubleImage>
           <DoubleImage>
-            <BigPatzankiStyledImage src={PartizankiSevenWEBP} />
-            <BigPatzankiStyledImage src={PartizankiEightWEBP} />
+            <BigPatzankiStyledImage
+              onContextMenu={(e) => e.preventDefault()}
+              src={PartizankiSevenWEBP}
+            />
+            <BigPatzankiStyledImage
+              onContextMenu={(e) => e.preventDefault()}
+              src={PartizankiEightWEBP}
+            />
           </DoubleImage>
         </Images>
         <Divider />
@@ -167,11 +194,20 @@ const GraphicDesign = () => {
         />
         <Images>
           <DoubleImage>
-            <MalluableSmallStyledImage src={MalluableOneWEBP} />
-            <MalluableSmallStyledImage src={MalluableTwoWEBP} />
+            <MalluableSmallStyledImage
+              onContextMenu={(e) => e.preventDefault()}
+              src={MalluableOneWEBP}
+            />
+            <MalluableSmallStyledImage
+              onContextMenu={(e) => e.preventDefault()}
+              src={MalluableTwoWEBP}
+            />
           </DoubleImage>
           <SingleImage>
-            <MalluableBigStyledImage src={MalluableThreeWEBP} />
+            <MalluableBigStyledImage
+              onContextMenu={(e) => e.preventDefault()}
+              src={MalluableThreeWEBP}
+            />
           </SingleImage>
         </Images>
         <Divider />
@@ -185,7 +221,10 @@ const GraphicDesign = () => {
         />
         <Images>
           <SingleImage>
-            <AfterdarkStyledImage src={AfterdarkWEBP} />
+            <AfterdarkStyledImage
+              onContextMenu={(e) => e.preventDefault()}
+              src={AfterdarkWEBP}
+            />
           </SingleImage>
         </Images>
         <Divider />
@@ -199,8 +238,14 @@ const GraphicDesign = () => {
         />
         <Images>
           <DoubleImage>
-            <MagazinesStyledImage src={MagazinesOneWEBP} />
-            <MagazinesStyledImage src={MagazinesTwoWEBP} />
+            <MagazinesStyledImage
+              onContextMenu={(e) => e.preventDefault()}
+              src={MagazinesOneWEBP}
+            />
+            <MagazinesStyledImage
+              onContextMenu={(e) => e.preventDefault()}
+              src={MagazinesTwoWEBP}
+            />
           </DoubleImage>
         </Images>
       </ProjectContainer>

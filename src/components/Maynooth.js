@@ -75,11 +75,21 @@ const Maynooth = () => {
           "To build an ecommerce website for people to browse & purchase furniture for home delivery.",
           "Paper and digital wireframing, low and high-fidelity prototyping,accounting for accessibility, and iterating on designs",
         ]}
-        image={<MaynoothOverviewStyledImage src={MaynoothOverviewWEBP} />}
+        image={
+          <MaynoothOverviewStyledImage
+            onContextMenu={(e) => e.preventDefault()}
+            src={MaynoothOverviewWEBP}
+          />
+        }
       />
       <TextsImageRow
         sectionHeaderText={"TARGET AUDIENCE - PERSONA"}
-        image={<MaynoothUserStyledImage src={MaynoothUserWEBP} />}
+        image={
+          <MaynoothUserStyledImage
+            onContextMenu={(e) => e.preventDefault()}
+            src={MaynoothUserWEBP}
+          />
+        }
       />
       <TextsImageRow
         isTextCenter={true}
@@ -89,7 +99,12 @@ const Maynooth = () => {
         texts={[
           "I start the design process with paper wireframes. This way I am able to brainstorm through many design ideas quickly. The persona influenced my sketches in keeping the design and the navigation simple. After I chose the most suitable layout for the persona I moved on to creating digital wireframes in Adobe XD.",
         ]}
-        image={<MaynoothWireframeStyledImage src={MaynoothWireframeWEBP} />}
+        image={
+          <MaynoothWireframeStyledImage
+            onContextMenu={(e) => e.preventDefault()}
+            src={MaynoothWireframeWEBP}
+          />
+        }
       />
       <TextsImageRow
         isTextCenter={true}
@@ -110,7 +125,12 @@ const Maynooth = () => {
         texts={[
           "Using the completed set of digital wireframes, I created a low-fidelity prototype. The primary user flow I connected was the furniture order process.",
         ]}
-        image={<MaynoothLowFidelityStyledImage src={MaynoothLowFidelityWEBP} />}
+        image={
+          <MaynoothLowFidelityStyledImage
+            onContextMenu={(e) => e.preventDefault()}
+            src={MaynoothLowFidelityWEBP}
+          />
+        }
       />
       <TextsImageRow
         isTextCenter={true}
@@ -120,18 +140,34 @@ const Maynooth = () => {
         texts={[
           "First I created a mood board, keeping in mind the persona and trying to match her preferences (colors, shapes, typeface, etc.)This way I can refine the design keeping in mind the mood and emotions I want to invoke in users.",
         ]}
-        image={<MaynoothMoodboardStyledImage src={MaynoothMoodboardWEBP} />}
+        image={
+          <MaynoothMoodboardStyledImage
+            onContextMenu={(e) => e.preventDefault()}
+            src={MaynoothMoodboardWEBP}
+          />
+        }
       />
       <SubheaderImage
         subheader={"Style guide"}
-        image={<MaynoothStyleGuideStyledImage src={MaynoothStyleGuideWEBP} />}
+        image={
+          <MaynoothStyleGuideStyledImage
+            onContextMenu={(e) => e.preventDefault()}
+            src={MaynoothStyleGuideWEBP}
+          />
+        }
       />
       <SubheaderImage
         subheader={"Mockups"}
         image={
           <DoubleImageContainer>
-            <MaynoothMockupStyledImage src={MaynoothMockupOneWEBP} />
-            <MaynoothMockupStyledImage src={MaynoothMockupTwoWEBP} />
+            <MaynoothMockupStyledImage
+              onContextMenu={(e) => e.preventDefault()}
+              src={MaynoothMockupOneWEBP}
+            />
+            <MaynoothMockupStyledImage
+              onContextMenu={(e) => e.preventDefault()}
+              src={MaynoothMockupTwoWEBP}
+            />
           </DoubleImageContainer>
         }
       />
@@ -148,7 +184,10 @@ const Maynooth = () => {
           },
         ]}
         image={
-          <MaynoothHighFidelityStyledImage src={MaynoothHighFidelityWEBP} />
+          <MaynoothHighFidelityStyledImage
+            onContextMenu={(e) => e.preventDefault()}
+            src={MaynoothHighFidelityWEBP}
+          />
         }
       />
       <TextsImageRow
@@ -159,7 +198,12 @@ const Maynooth = () => {
         texts={[
           "Since the Maynooth furniture website was my first project, I learned a lot about organising the process and documenting the progress, and got a taste of the design tool. In retrospect, I would like to follow a more solid design approach.To sum it up, completing this project was a proud milestone for me as it killed off my doubts as to whether the UI/UX design field suits me.",
         ]}
-        image={<MaynoothTakeawaysStyledImage src={MaynoothTakeawaysWEBP} />}
+        image={
+          <MaynoothTakeawaysStyledImage
+            onContextMenu={(e) => e.preventDefault()}
+            src={MaynoothTakeawaysWEBP}
+          />
+        }
       />
     </PaddinglessContainer>
   );

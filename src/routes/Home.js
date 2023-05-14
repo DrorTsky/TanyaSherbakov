@@ -34,17 +34,11 @@ const IntroductionTextStyle = styled.div`
 
 const HelloHeaderStyle = styled.div`
   font-style: normal;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 64px;
   line-height: 82px;
 
   color: #444cf7;
-  // @media (max-width: 768px) {
-  //   font-style: normal;
-  //   font-weight: 400;
-  //   font-size: 24px;
-  //   line-height: 31px;
-  // }
 `;
 
 const IntroductionTextContainerStyle = styled(ColumnContainer)`
@@ -69,13 +63,21 @@ export const Home = () => {
   return (
     <div>
       <IntroductionContainer>
-        <DoubleBlobStyledImage src={DoubleBlobWEBP} alt={"Double Blob"} />
+        <DoubleBlobStyledImage
+          onContextMenu={(e) => e.preventDefault()}
+          src={DoubleBlobWEBP}
+          alt={"Double Blob"}
+        />
         <IntroductionTextContainerStyle>
           <HelloHeaderStyle>Hello!</HelloHeaderStyle>
           <Container>
             <IntroductionTextStyle>
               I'm Tanya, a product designer based in Israel.&nbsp;
-              <IsraelStyledImage src={IsraelWEBP} alt={"Israel"} />
+              <IsraelStyledImage
+                onContextMenu={(e) => e.preventDefault()}
+                src={IsraelWEBP}
+                alt={"Israel"}
+              />
             </IntroductionTextStyle>
           </Container>
           <IntroductionTextStyle>
@@ -121,7 +123,11 @@ export const Home = () => {
         year={2021}
         blob={"blue"}
       >
-        <IchiPreviewStyledImage src={IchiWEBPStyle} alt={"Ichi"} />
+        <IchiPreviewStyledImage
+          onContextMenu={(e) => e.preventDefault()}
+          src={IchiWEBPStyle}
+          alt={"Ichi"}
+        />
       </ProjectPreview>
       <ProjectPreview
         text={
@@ -132,7 +138,11 @@ export const Home = () => {
         year={2021}
         blob={"pink"}
       >
-        <MaynoothPreviewStyledImage src={MaynoothWEBPStyle} alt={"Maynooth"} />
+        <MaynoothPreviewStyledImage
+          onContextMenu={(e) => e.preventDefault()}
+          src={MaynoothWEBPStyle}
+          alt={"Maynooth"}
+        />
       </ProjectPreview>
     </div>
   );

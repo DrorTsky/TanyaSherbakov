@@ -55,7 +55,7 @@ const LearningConainer = styled.div`
 `;
 const BoldedText = styled.div`
   font-style: normal;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 40px;
   line-height: 51px;
   color: #031121;
@@ -66,7 +66,7 @@ const BoldedText = styled.div`
 `;
 const BoldedLearningText = styled.div`
   font-style: normal;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 36px;
   line-height: 46px;
   color: #000000;

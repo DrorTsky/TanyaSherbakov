@@ -51,12 +51,22 @@ const understandingTheUserTextImagesData = [
     text: "I conducted interviews and created empathy maps to understand the users I'm designing for and their needs. A primary user group identified through researchwas working adults who don’t have time to cook meals.<br> This user group confirmed initial assumptions about Ichi customers, but research also revealed thattime was not the only factor limiting users from cooking at home. Other user problems includedobligations, interests, or challenges that make it difficult to get groceries for cooking or go to restaurants in-person.",
 
     imageHeader: "Pain points",
-    images: [<KillBillsPainPointsStyledImage src={IchiPainPointsWEBP} />],
+    images: [
+      <KillBillsPainPointsStyledImage
+        onContextMenu={(e) => e.preventDefault()}
+        src={IchiPainPointsWEBP}
+      />,
+    ],
   },
   {
     header: "Meet the user",
     text: "Adam is about to complete his B.Sc in Program Engineering, and hopes that the internship will launch their career. Adam finds himself very busy during the day and has no time for food prep. After a long day he is looking to order a delivery from his favorite sushi restaurant and relax.",
-    images: [<IchiUserStyledImage src={IchiUserWEBP} />],
+    images: [
+      <IchiUserStyledImage
+        onContextMenu={(e) => e.preventDefault()}
+        src={IchiUserWEBP}
+      />,
+    ],
   },
   {
     header: "Problem statement",
@@ -65,7 +75,12 @@ const understandingTheUserTextImagesData = [
   {
     header: "User journey map",
     text: "Mapping Adam’s user journey revealed how helpful it would be for users to have access to a dedicated Ichi app",
-    images: [<IchiMapStyledImage src={IchiMapWEBP} />],
+    images: [
+      <IchiMapStyledImage
+        onContextMenu={(e) => e.preventDefault()}
+        src={IchiMapWEBP}
+      />,
+    ],
   },
 ];
 
@@ -92,14 +107,29 @@ const refiningTheDesignTextImagesData = [
   {
     header: "Mockups",
     text: "In the early designs there were two navigation bars. The usability studies showed that it was confusing for the users, thus I <strong>reduced</strong> it to contain only <strong>one navigation bar.</strong>",
-    images: [<IchiBeforeAfterStyledImage src={IchiBeforeAfterOneWEBP} />],
+    images: [
+      <IchiBeforeAfterStyledImage
+        onContextMenu={(e) => e.preventDefault()}
+        src={IchiBeforeAfterOneWEBP}
+      />,
+    ],
   },
   {
     text: "The <strong>cart icon</strong> was moved to the <strong>top - right corner</strong> of the navigation bar, because the usability studies showed that in the initial designs users had trouble finding it.",
-    images: [<IchiBeforeAfterStyledImage src={IchiBeforeAfterTwoWEBP} />],
+    images: [
+      <IchiBeforeAfterStyledImage
+        onContextMenu={(e) => e.preventDefault()}
+        src={IchiBeforeAfterTwoWEBP}
+      />,
+    ],
   },
   {
-    images: [<IchiMockupStyledImage src={IchiMockupWEBP} />],
+    images: [
+      <IchiMockupStyledImage
+        onContextMenu={(e) => e.preventDefault()}
+        src={IchiMockupWEBP}
+      />,
+    ],
   },
   {
     isTextsImageRow: true,
@@ -112,7 +142,12 @@ const refiningTheDesignTextImagesData = [
     links: [
       { text: "High fidelity prototype", link: "https://bit.ly/3cZFcVG" },
     ],
-    image: <IchiHighfidelityStyledImage src={IchiHighfidelityWEBP} />,
+    image: (
+      <IchiHighfidelityStyledImage
+        onContextMenu={(e) => e.preventDefault()}
+        src={IchiHighfidelityWEBP}
+      />
+    ),
   },
 ];
 
@@ -142,7 +177,12 @@ const Ichi = () => {
           "Provide transparency about the delivery time so the users can organise their time better",
           "Conducting interviews, paper and digital wireframing, low and high-fidelity prototyping, conducting usability studies, accounting for accessibility, and iterating on designs.",
         ]}
-        image={<IchiOverviewStyledImage src={IchiOverviewWEBP} />}
+        image={
+          <IchiOverviewStyledImage
+            onContextMenu={(e) => e.preventDefault()}
+            src={IchiOverviewWEBP}
+          />
+        }
       />
       <Container>
         <SectionHeader>UNDERSTANDING THE USER</SectionHeader>
@@ -156,7 +196,12 @@ const Ichi = () => {
         texts={[
           "Taking the time to draft iterations of each screen of the app on paper, ensured that the elements that made it to digital wireframes would be well-suited to address user pain points. For the home screen, I prioritise visible empathy buttons for the new order to help users start the process easily.",
         ]}
-        image={<IchiWireframeStyledImage src={IchiStartingWEBP} />}
+        image={
+          <IchiWireframeStyledImage
+            onContextMenu={(e) => e.preventDefault()}
+            src={IchiStartingWEBP}
+          />
+        }
       />
       <Container>
         <SideHeaderTextAndImage
@@ -166,8 +211,14 @@ const Ichi = () => {
           }
           images={[
             <DigitalWireframesContainer>
-              <IchiDigitalStyledImage src={IchiWireframeWEBP} />
-              <IchiDigitalStyledImage src={IchiWireframeTwoWEBP} />
+              <IchiDigitalStyledImage
+                onContextMenu={(e) => e.preventDefault()}
+                src={IchiWireframeWEBP}
+              />
+              <IchiDigitalStyledImage
+                onContextMenu={(e) => e.preventDefault()}
+                src={IchiWireframeTwoWEBP}
+              />
             </DigitalWireframesContainer>,
           ]}
         />
@@ -181,7 +232,12 @@ const Ichi = () => {
         links={[
           { text: "Low fidelity prototype", link: "https://bit.ly/3xJrJJK" },
         ]}
-        image={<IchiLowFidelityStyledImage src={IchiLowFidelityWEBP} />}
+        image={
+          <IchiLowFidelityStyledImage
+            onContextMenu={(e) => e.preventDefault()}
+            src={IchiLowFidelityWEBP}
+          />
+        }
       />
       <Container>
         <HeadersAndLists items={headerAndListsItems} />
@@ -191,7 +247,10 @@ const Ichi = () => {
         <SectionHeader>REFINING THE DESIGN</SectionHeader>
         {refiningTheDesignTextImages}
         <UserSubHeader>Accessibility considerations</UserSubHeader>
-        <KillBillsPainPointsStyledImage src={IchiaccessibilityWEBP} />
+        <KillBillsPainPointsStyledImage
+          onContextMenu={(e) => e.preventDefault()}
+          src={IchiaccessibilityWEBP}
+        />
         <Divider />
       </Container>
       <TextsImageRow

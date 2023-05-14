@@ -8,7 +8,7 @@ import { Button } from "antd";
 const Icon = styled.div``;
 const ProjectNameText = styled.div`
   font-style: normal;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 52px;
   line-height: 67px;
   @media (max-width: 768px) {
@@ -53,7 +53,7 @@ const DescriptionText = styled.div`
 const ProjectLinkText = styled.div`
   align-self: center;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 36px;
   line-height: 46px;
   @media (max-width: 768px) {

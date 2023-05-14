@@ -9,7 +9,7 @@ import { MenuOutlined } from "@ant-design/icons";
 const StyledLink = styled(Link)`
   text-decoration: none;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 22px;
   line-height: 28px;
   color: ${(props) => (props.selected ? "#444CF7" : "#031121")} !important;

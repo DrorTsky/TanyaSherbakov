@@ -77,7 +77,12 @@ export const MarketLog = () => {
           "Each calendar contains a lot of data and usually appears, on desktop, in big charts with multiple columns. The issue of adapting these charts to the mobile device, was to find a way in which there will be no need in horizontal scrolling through the chart, so the users' eyes and brains could relax and observe the data without extra effort.",
           "After reading multiple studies about texts and how we read them, with observing our competitors I came to the solution of showing the data in scrolls. Providing the possibility for the user to observe all the data of a particular event in a horizontal layout. Lets see the result :)",
         ]}
-        image={<OverviewStyledImage src={MarketLogOverviewWEBP} />}
+        image={
+          <OverviewStyledImage
+            onContextMenu={(e) => e.preventDefault()}
+            src={MarketLogOverviewWEBP}
+          />
+        }
       />
       <TextsImageRow
         sectionHeaderText={"UNDERSTANDING THE USER & THE MARKET"}
@@ -87,7 +92,12 @@ export const MarketLog = () => {
           "The majority of our competitors are using tables with horizontal scrolling in their calendars. It's like this due to the fact that most of them were built years ago, when the mobile website adaptation was not that common. In addition most of our competitors are addressing more mature audience, that is used to accessing the platform through the desktop.",
           "We hope to expand our target audience, and for that we need to address the needs of the younger traders and investors, who are more adapted the the smartphone. Thus the decision to make the calendars layout vertical in the mobile device, avoiding unnecessary horizontal scrolling was crucial for the user experience.",
         ]}
-        image={<UnderstandingStyledImage src={MarketLogUnderstaindingWEBP} />}
+        image={
+          <UnderstandingStyledImage
+            onContextMenu={(e) => e.preventDefault()}
+            src={MarketLogUnderstaindingWEBP}
+          />
+        }
       />
       <MainContainer>
         <SectionHeader>The Result</SectionHeader>
@@ -98,7 +108,10 @@ export const MarketLog = () => {
             />
           </ResultImageContainer>
           <ResultImageContainer>
-            <MarketlogResultBigStyledImage src={MarketLogResultBigOneWEBP} />
+            <MarketlogResultBigStyledImage
+              onContextMenu={(e) => e.preventDefault()}
+              src={MarketLogResultBigOneWEBP}
+            />
           </ResultImageContainer>
           <ResultImageContainer>
             <MarketlogResultSmallStyledImage
@@ -106,7 +119,10 @@ export const MarketLog = () => {
             />
           </ResultImageContainer>
           <ResultImageContainer>
-            <MarketlogResultBigStyledImage src={MarketLogResultBigTwoWEBP} />
+            <MarketlogResultBigStyledImage
+              onContextMenu={(e) => e.preventDefault()}
+              src={MarketLogResultBigTwoWEBP}
+            />
           </ResultImageContainer>
         </ResultImageGridContainer>
       </MainContainer>

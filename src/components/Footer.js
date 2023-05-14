@@ -21,7 +21,7 @@ const HeaderContainer = styled.div`
 `;
 const TextStyle = styled.div`
   font-style: normal;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 52px;
   line-height: 67px;
   color: #000000;
@@ -45,7 +45,7 @@ const LinksContainer = styled.div`
 const LinkTextStyle = styled.a`
   text-decoration: none;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 22px;
   line-height: 28px;
   color: #031121;

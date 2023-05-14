@@ -9,7 +9,7 @@ import { Navbar, MobileNavBar } from "./NavBar";
 const NameText = styled.div`
   //   font-family: "Futura PT";
   font-style: normal;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 36px;
   line-height: 46px;
   @media (max-width: 768px) {

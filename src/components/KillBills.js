@@ -96,18 +96,29 @@ export const KillBills = () => {
           "The first problem is that the way Israelis receive and pay their bills is old fashioned, slow and costly. Bills that are lost or forgotten generate preventable debt. Citizens have no way to monitor their bills by any way other than collecting receipts which creates disorder and confusion. The second problem is that state provided bills cannot be broken into separate smaller bills for many to pay (i.e., roommates paying for the electricity need to choose one person to pay the entire bill himself, creating debt)",
           "KillBills provides its users a platform in which they can receive, monitor and pay their bills either separately or by splitting it between other users.",
         ]}
-        image={<KillBillsOverviewStyledImage src={KillBillsOverviewWEBP} />}
+        image={
+          <KillBillsOverviewStyledImage
+            onContextMenu={(e) => e.preventDefault()}
+            src={KillBillsOverviewWEBP}
+          />
+        }
       />
       <Container>
         <SectionHeader>UNDERSTANDING THE USER</SectionHeader>
         <UserSubHeader>User persona</UserSubHeader>
-        <KillBillsUnderstandingStyledImage src={KillBillsUserWEBP} />
+        <KillBillsUnderstandingStyledImage
+          onContextMenu={(e) => e.preventDefault()}
+          src={KillBillsUserWEBP}
+        />
         <StyledParagraphText>
           Chen lives in an apartment with his brother and he needs to split the
           electricity bill with him because he wants their payments to be equal.
         </StyledParagraphText>
         <StyledUserSubHeader>Pain points</StyledUserSubHeader>
-        <KillBillsPainPointsStyledImage src={KillBillsPainPointsWEBP} />
+        <KillBillsPainPointsStyledImage
+          onContextMenu={(e) => e.preventDefault()}
+          src={KillBillsPainPointsWEBP}
+        />
         <Divider />
       </Container>
       <Container>
@@ -127,17 +138,31 @@ export const KillBills = () => {
               </strong>
             </span>
           </StyledDesriptionContainer>
-          <KillBillsWireframeStyledImage src={KillBillswireframeWEBP} />
+          <KillBillsWireframeStyledImage
+            onContextMenu={(e) => e.preventDefault()}
+            src={KillBillswireframeWEBP}
+          />
         </StyledSectionBody>
         <SubHeaderImage
           subheader={"UI Guide"}
-          images={[<KillBillsUiGuideStyledImage src={KillBillsUiGuideWEBP} />]}
+          images={[
+            <KillBillsUiGuideStyledImage
+              onContextMenu={(e) => e.preventDefault()}
+              src={KillBillsUiGuideWEBP}
+            />,
+          ]}
         />
         <SubHeaderImage
           subheader={"Mockups"}
           images={[
-            <KillBillsMockupStyledImage src={KillBillsMockupOneWEBP} />,
-            <KillBillsMockupStyledImage src={KillBillsMockupTwoWEBP} />,
+            <KillBillsMockupStyledImage
+              onContextMenu={(e) => e.preventDefault()}
+              src={KillBillsMockupOneWEBP}
+            />,
+            <KillBillsMockupStyledImage
+              onContextMenu={(e) => e.preventDefault()}
+              src={KillBillsMockupTwoWEBP}
+            />,
           ]}
         />
         <UserSubHeader>High - fidelity prototype</UserSubHeader>
@@ -160,7 +185,12 @@ export const KillBills = () => {
           "I learned how to work with an external business and to communicate and solve users' needs under business limitations.",
           "• Conduct another round of usability studies to validate whether the pain points users experienced have been effectively addressed. <br>• Conduct more user research to determine any new areas of need.",
         ]}
-        image={<KillBillsSketchStyledImage src={KillBillsSketchWEBP} />}
+        image={
+          <KillBillsSketchStyledImage
+            onContextMenu={(e) => e.preventDefault()}
+            src={KillBillsSketchWEBP}
+          />
+        }
       />
     </div>
   );
