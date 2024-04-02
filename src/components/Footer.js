@@ -60,7 +60,7 @@ export const Footer = () => {
       </HeaderContainer>
       <LinksContainer>
         <LinkTextStyle href={""}>Linkedin</LinkTextStyle>
-        <LinkTextStyle href={""}>Instegram</LinkTextStyle>
+        <LinkTextStyle href={""}>Instagram</LinkTextStyle>
         <LinkTextStyle href={""}>Email</LinkTextStyle>
         <LinkTextStyle href={""}>Resume</LinkTextStyle>
       </LinksContainer>
