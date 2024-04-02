@@ -1,6 +1,10 @@
 /** @format */
 import { Link } from "react-router-dom";
-import { PinkBlobSVGStyle, BlueBlobSVGStyle, ArrowSVGStyle } from "./SvgStyles";
+import {
+  YellowBlobVSGStyle,
+  BlueBlobSVGStyle,
+  ArrowSVGStyle,
+} from "./SvgStyles";
 import React from "react";
 import styled from "styled-components";
 import { Button } from "antd";
@@ -103,7 +107,7 @@ const ProjectNameContainer = (props) => {
   return (
     <ColumnContainer>
       <NameContainer>
-        {blob === "blue" ? <BlueBlobSVGStyle /> : <PinkBlobSVGStyle />}
+        {blob === "blue" ? <BlueBlobSVGStyle /> : <YellowBlobVSGStyle />}
         <ProjectName type={type} name={name} />
       </NameContainer>
       <ProjectNameSubheader year={year} />
@@ -149,7 +153,7 @@ const DescriptionContainer = (props) => {
       <Description text={props.text} />
       <ProjectLink
         link={props.link}
-        color={props.blob === "blue" ? "#444CF7" : "#FF8BB2"}
+        color={props.blob === "blue" ? "#444CF7" : "#FFD600"}
       />
     </DescriptionContainerStyle>
   );

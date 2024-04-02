@@ -3,7 +3,10 @@
 import styled from "styled-components";
 
 import { ReactComponent as BlueBlobSVG } from "../images/blueBlob.svg";
+import BlueBlob from "../images/blueBlob.svg";
+import YellowCircle from "../images/YellowCircle.svg";
 import { ReactComponent as PinkBlobSVG } from "../images/pinkBlob.svg";
+import { ReactComponent as YellowBlobSVG } from "../images/yellowBlob.svg";
 import { ReactComponent as ArrowSVG } from "../images/arrow.svg";
 
 const ImageStyle = styled.img`
@@ -38,7 +41,7 @@ export const BlueBlobSVGStyle = styled(BlueBlobSVG)`
   }
 `;
 
-export const HeaderBlueBlobSVGStyle = styled(BlueBlobSVG)`
+export const HeaderBlueBlobSVGStyle = styled.div`
   height: 32px;
   width: 31px;
   margin-top: 5px;
@@ -47,9 +50,25 @@ export const HeaderBlueBlobSVGStyle = styled(BlueBlobSVG)`
     height: 24px;
     width: 23px;
   }
+  background-image: url(${BlueBlob});
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  &:hover {
+    background-image: url(${YellowCircle});
+  }
 `;
 
 export const PinkBlobSVGStyle = styled(PinkBlobSVG)`
+  margin-top: 5px;
+  align-self: center;
+  @media (max-width: 768px) {
+    height: 26px;
+    width: 25px;
+  }
+`;
+
+export const YellowBlobVSGStyle = styled(YellowBlobSVG)`
   margin-top: 5px;
   align-self: center;
   @media (max-width: 768px) {
