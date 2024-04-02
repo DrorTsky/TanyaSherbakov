@@ -139,6 +139,7 @@ const ProjectDescriptionContainer = styled.div`
   flex-direction: column;
   gap: 10px;
   padding-bottom: 91px;
+  padding-top: 61px;
   @media (max-width: 768px) {
     padding-bottom: 65px;
     padding-top: 30px;
