@@ -1,7 +1,7 @@
 /** @format */
 
 import "./App.css";
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { Home } from "./routes/Home";
 import { Routes, Route } from "react-router-dom";
@@ -25,12 +25,13 @@ function ScrollToTop() {
 }
 
 function App() {
+  const [isScrollToId, setIsScrollToId] = useState(false);
   return (
     <>
       <ScrollToTop />
-      <Header />
+      <Header setIsScrollToId={setIsScrollToId} />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" exact element={<Home isScrollToId={isScrollToId} />} />
         <Route path="/MarketLog" element={<MarketLog />} />
         <Route path="/KillBills" element={<KillBills />} />
         <Route path="/Ichi" element={<Ichi />} />

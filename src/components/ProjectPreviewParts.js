@@ -183,14 +183,15 @@ const ImageContainer = styled(Container)`
 `;
 
 export const ProjectPreview = (props) => {
+  const { id, ...rest } = props;
   return (
-    <ProjectPreviewContainer>
+    <ProjectPreviewContainer id={id}>
       <Divider />
       <ResponsiveContainer>
-        <ProjectNameContainer {...props} />
-        <DescriptionContainer {...props} />
+        <ProjectNameContainer {...rest} />
+        <DescriptionContainer {...rest} />
       </ResponsiveContainer>
-      <ImageContainer>{props.children}</ImageContainer>
+      <ImageContainer>{rest.children}</ImageContainer>
     </ProjectPreviewContainer>
   );
 };

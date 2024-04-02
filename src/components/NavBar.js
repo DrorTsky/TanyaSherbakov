@@ -20,9 +20,14 @@ const Conatiner = styled.div`
   align-items: center;
 `;
 
-export const Navbar = () => {
+export const Navbar = ({ setIsScrollToId }) => {
   const [selected, setSelected] = useState("home");
   function onClick(event) {
+    if (event.target.id === "product-design") {
+      setIsScrollToId(true);
+    } else {
+      setIsScrollToId(false);
+    }
     setSelected(event.target.id);
   }
   return (
@@ -32,6 +37,14 @@ export const Navbar = () => {
         id={"home"}
         onClick={onClick}
         selected={selected === "home"}
+      >
+        Home
+      </StyledLink>
+      <StyledLink
+        to="/"
+        id={"product-design"}
+        onClick={onClick}
+        selected={selected === "product-design"}
       >
         Product Design
       </StyledLink>
@@ -61,22 +74,39 @@ const StyledAntDropdown = styled(Dropdown)`
   }
 `;
 
-export const MobileNavBar = () => {
+export const MobileNavBar = ({ setIsScrollToId }) => {
   const [selected, setSelected] = useState("home");
   function onClick(event) {
-    console.log(event.target.id);
+    if (event.target.id === "product-design") {
+      setIsScrollToId(true);
+    } else {
+      setIsScrollToId(false);
+    }
     setSelected(event.target.id);
   }
 
   const items = [
     {
-      key: 1,
+      key: 0,
       label: (
         <StyledLink
           to="/"
           id={"home"}
           onClick={onClick}
           selected={selected === "home"}
+        >
+          Home
+        </StyledLink>
+      ),
+    },
+    {
+      key: 1,
+      label: (
+        <StyledLink
+          to="/"
+          id={"product-design"}
+          onClick={onClick}
+          selected={selected === "product-design"}
         >
           Product Design
         </StyledLink>

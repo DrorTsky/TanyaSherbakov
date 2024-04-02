@@ -1,6 +1,6 @@
 /** @format */
 
-import React from "react";
+import React, { useEffect } from "react";
 import { ProjectPreview } from "../components/ProjectPreviewParts";
 import { Container, ColumnContainer } from "../components/ProjectPreviewParts";
 import styled from "styled-components";
@@ -48,6 +48,7 @@ const IntroductionTextContainerStyle = styled(ColumnContainer)`
 
 const IntroductionContainer = styled(Container)`
   gap: 76px;
+  margin-top: 120px;
   margin-bottom: 5%;
   align-items: center;
   padding-inline: 10%;
@@ -59,7 +60,18 @@ const IntroductionContainer = styled(Container)`
   }
 `;
 
-export const Home = () => {
+export const Home = ({ isScrollToId }) => {
+  useEffect(() => {
+    const element = document.getElementById("marketlog");
+    if (element && isScrollToId) {
+      element.scrollIntoView({
+        behavior: "smooth",
+        block: "center",
+        inline: "nearest",
+      });
+    }
+  }, [isScrollToId]);
+
   return (
     <div>
       <IntroductionContainer>
@@ -94,6 +106,7 @@ export const Home = () => {
         name={"Marketlog"}
         year={2022}
         blob={"blue"}
+        id={"marketlog"}
       >
         <MarketlogPreviewStyledImage
           src={MarketLogWEBPStyle}
