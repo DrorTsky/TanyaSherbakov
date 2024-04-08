@@ -12,6 +12,7 @@ import {
   MainContainer,
   SectionHeader,
   ProjectDescription,
+  NextProjectSegment,
 } from "./ProjectParts";
 import MarketLogOverviewWEBP from "../images/marketlog-overview.webp";
 import MarketLogUnderstaindingWEBP from "../images/marketlog-understanding.webp";
@@ -126,6 +127,7 @@ export const MarketLog = () => {
           </ResultImageContainer>
         </ResultImageGridContainer>
       </MainContainer>
+      <NextProjectSegment text={"Next Project"} link={"/KillBills"} />
     </div>
   );
 };

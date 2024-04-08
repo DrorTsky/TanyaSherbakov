@@ -58,14 +58,14 @@ const ProjectLinkText = styled.div`
   align-self: center;
   font-style: normal;
   font-weight: 700;
-  font-size: 36px;
+  font-size: ${(props) => (props.fontSize ? `${props.fontSize}px` : "36px")};
   line-height: 46px;
   @media (max-width: 768px) {
     font-size: 24px;
     line-height: 31px;
   }
 `;
-const DividerLine = styled.div`
+export const DividerLine = styled.div`
   opacity: 0.25;
 
   width: 99%;
@@ -126,11 +126,13 @@ const StyledArrowIcon = styled(Button)`
   }
 `;
 
-const ProjectLink = (props) => {
-  const { link, color } = props;
+export const ProjectLink = (props) => {
+  const { link, color, fontSize, text } = props;
   return (
     <Container>
-      <ProjectLinkText>View Project</ProjectLinkText>
+      <ProjectLinkText fontSize={fontSize}>
+        {text ?? "View Project"}
+      </ProjectLinkText>
       <Link to={link}>
         <StyledArrowIcon type={"link"}>
           <ArrowSVGStyle color={color} />

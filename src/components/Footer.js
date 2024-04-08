@@ -7,7 +7,7 @@ import { Divider } from "./ProjectPreviewParts";
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 143px 107px;
+  padding: 0 107px 143px 107px;
   @media (max-width: 768px) {
     padding: 50px 15px;
   }

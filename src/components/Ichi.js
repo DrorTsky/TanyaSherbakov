@@ -8,7 +8,9 @@ import {
   UserSubHeader,
   Container,
   HeadersAndLists,
+  NextProjectSegment,
 } from "./ProjectParts";
+
 import {
   IchiOverviewStyledImage,
   KillBillsPainPointsStyledImage,
@@ -264,6 +266,7 @@ const Ichi = () => {
           "• Conduct another round of usability studies to validate whether the pain points users experienced have been effectively addressed. <br>• Conduct more user research to determine any new areas of need.",
         ]}
       />
+      <NextProjectSegment text={"Next Project"} link={"/Maynooth"} />
     </div>
   );
 };

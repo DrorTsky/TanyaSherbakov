@@ -12,6 +12,7 @@ import {
   SubHeaderImage,
 } from "./ProjectParts";
 import { Divider } from "./ProjectPreviewParts";
+import { NextProjectSegment } from "./ProjectParts";
 import KillBillsUserWEBP from "../images/killbills - user.webp";
 import {
   KillBillsOverviewStyledImage,
@@ -192,6 +193,7 @@ export const KillBills = () => {
           />
         }
       />
+      <NextProjectSegment text={"Next Project"} link={"/Ichi"} />
     </div>
   );
 };

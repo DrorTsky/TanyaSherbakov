@@ -1,7 +1,8 @@
 /** @format */
 
 import styled from "styled-components";
-import { Divider } from "./ProjectPreviewParts";
+import { Divider, ProjectLink, DividerLine } from "./ProjectPreviewParts";
+// import { Button } from "antd";
 
 export const Container = styled.div`
   display: flex;
@@ -339,5 +340,35 @@ export const SideHeaderTextAndImage = (props) => {
         </>
       )}
     </>
+  );
+};
+
+const NextPageContainer = styled.div`
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+`;
+
+const NextProjectcontainer = styled.div`
+  & ${DividerLine} {
+    margin-bottom: 32px;
+  }
+  display: flex;
+  flex-direction: column;
+  padding: 91px 107px 32px 107px;
+  @media (max-width: 768px) {
+    padding: 50px 15px;
+  }
+`;
+
+export const NextProjectSegment = (props) => {
+  return (
+    <NextProjectcontainer>
+      <Divider />
+      <NextPageContainer>
+        <ProjectLink {...props} fontSize={24} />
+      </NextPageContainer>
+    </NextProjectcontainer>
   );
 };
