@@ -16,7 +16,7 @@ import MarketLogWEBPStyle from "../images/marketlog.webp";
 import IchiWEBPStyle from "../images/ichi.webp";
 import KillbillsWEBPStyle from "../images/killbills.webp";
 import MaynoothWEBPStyle from "../images/maynooth.webp";
-import DoubleBlobWEBP from "../images/doubleBlob.webp";
+import WildHeartSVG from "../images/WildHeart.svg";
 import IsraelWEBP from "../images/israel.webp";
 
 const IntroductionTextStyle = styled.div`
@@ -77,7 +77,7 @@ export const Home = ({ isScrollToId }) => {
       <IntroductionContainer>
         <DoubleBlobStyledImage
           onContextMenu={(e) => e.preventDefault()}
-          src={DoubleBlobWEBP}
+          src={WildHeartSVG}
           alt={"Double Blob"}
         />
         <IntroductionTextContainerStyle>
