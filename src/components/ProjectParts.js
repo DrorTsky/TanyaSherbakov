@@ -69,7 +69,7 @@ const ImageContainer = styled.div`
 `;
 
 export const ParagraphHeader = styled.div`
-  font-weight: 450;
+  font-weight: 500;
   font-size: 32px;
   line-height: 41px;
   @media (max-width: 768px) {
