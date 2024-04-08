@@ -54,6 +54,7 @@ const IntroductionContainer = styled(Container)`
   padding-inline: 10%;
 
   @media (max-width: 768px) {
+    margin-top: 0;
     flex-direction: column;
     padding-inline: 3%;
     gap: 55px;

@@ -150,8 +150,8 @@ export const DoubleBlobStyledImage = styled(ImageStyle)`
   width: 369px;
   height: 355px;
   @media (max-width: 768px) {
-    width: 223px;
-    height: 215px;
+    width: 312px;
+    height: 312px;
     align-self: center;
   }
 `;
