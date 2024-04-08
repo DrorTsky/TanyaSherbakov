@@ -1,6 +1,6 @@
 /** @format */
 
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 import { ReactComponent as BlueBlobSVG } from "../images/blueBlob.svg";
 import BlueBlob from "../images/blueBlob.svg";
@@ -11,6 +11,17 @@ import { ReactComponent as ArrowSVG } from "../images/arrow.svg";
 
 const ImageStyle = styled.img`
   user-select: none;
+`;
+
+export const IconStyles = styled.div`
+  display: flex;
+  justify-content: center;
+  @media (max-width: 768px) {
+    svg {
+      height: 19px;
+      width: 19px;
+    }
+  }
 `;
 
 export const OverviewStyledImage = styled(ImageStyle)`
