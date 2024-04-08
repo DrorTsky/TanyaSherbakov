@@ -70,6 +70,21 @@ export const HeaderBlueBlobSVGStyle = styled.div`
   }
 `;
 
+export const YellowBlobMobileSVGStyle = styled.div`
+  height: 32px;
+  width: 31px;
+  margin-top: 5px;
+  align-self: center;
+  @media (max-width: 768px) {
+    height: 24px;
+    width: 23px;
+  }
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(${YellowCircle});
+`;
+
 export const PinkBlobSVGStyle = styled(PinkBlobSVG)`
   margin-top: 5px;
   align-self: center;

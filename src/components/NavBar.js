@@ -3,9 +3,13 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import { Button, Dropdown } from "antd";
-import { MenuOutlined } from "@ant-design/icons";
-
+import { Button, Dropdown, Modal } from "antd";
+import { MenuOutlined, CloseOutlined } from "@ant-design/icons";
+import WildHeartSVG from "../images/WildHeart.svg";
+import {
+  DoubleBlobStyledImage,
+  YellowBlobMobileSVGStyle,
+} from "../components/SvgStyles";
 const StyledLink = styled(Link)`
   text-decoration: none;
   font-style: normal;
@@ -68,14 +72,91 @@ export const Navbar = ({ setIsScrollToId }) => {
   );
 };
 
-const StyledAntDropdown = styled(Dropdown)`
-  .ant-dropdown-menu-item:not(ant-dropdown-menu-item-selected) {
-    color: red;
+const FullScreenModalContent = styled.div`
+  // height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
+
+// Define a styled component for the modal itself
+const FullScreenModalStyled = styled(Modal)`
+  && .ant-modal-content {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // padding: 0; /* Remove padding */
+    // margin: 0; /* Remove margin */
+  }
+  .ant-modal-content {
+    border-radius: 0;
+  }
+  && .ant-modal-body {
+    padding: 0;
+  }
+
+  && .ant-modal {
+    max-width: unset;
+    margin: unset;
   }
 `;
 
+const StyledModal = styled(Modal)`
+  height: 100vh;
+  max-width: 100vw !important;
+  top: 0;
+  padding: 0;
+  margin: 0 !important;
+  .ant-modal-content {
+    height: 100%;
+    border-radius: 0;
+  }
+  .ant-modal-close {
+    top: 23px;
+  }
+`;
+
+const LinksContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+`;
+
+const ButtonContainer = styled.div`
+  margin-right: 15px;
+  .hover {
+    background-color: unset;
+  }
+  .ant-btn {
+    padding: unset;
+  }
+`;
+
+const ModalTitle = () => {
+  return (
+    <div style={{ display: "flex", gap: "10px", alignItems: "center" }}>
+      <YellowBlobMobileSVGStyle />
+      <div>Tanya Sherbakov</div>
+    </div>
+  );
+};
+
+const ModalIcon = (props) => {
+  return (
+    <ButtonContainer>
+      <Button type={"text"} {...props}>
+        <CloseOutlined style={{ fontSize: "16px" }} />
+      </Button>
+    </ButtonContainer>
+  );
+};
+
 export const MobileNavBar = ({ setIsScrollToId }) => {
   const [selected, setSelected] = useState("home");
+  const [open, setOpen] = useState(false);
+
   function onClick(event) {
     if (event.target.id === "product-design") {
       setIsScrollToId(true);
@@ -83,72 +164,65 @@ export const MobileNavBar = ({ setIsScrollToId }) => {
       setIsScrollToId(false);
     }
     setSelected(event.target.id);
+    setOpen(false);
   }
 
-  const items = [
-    {
-      key: 0,
-      label: (
-        <StyledLink
-          to="/"
-          id={"home"}
-          onClick={onClick}
-          selected={selected === "home"}
-        >
-          Home
-        </StyledLink>
-      ),
-    },
-    {
-      key: 1,
-      label: (
-        <StyledLink
-          to="/"
-          id={"product-design"}
-          onClick={onClick}
-          selected={selected === "product-design"}
-        >
-          Product Design
-        </StyledLink>
-      ),
-    },
-    {
-      key: 2,
-      label: (
-        <StyledLink
-          to="/graphic-design"
-          id={"graphic-design"}
-          onClick={onClick}
-          selected={selected === "graphic-design"}
-        >
-          Graphic Design
-        </StyledLink>
-      ),
-    },
-    {
-      key: 3,
-      label: (
-        <StyledLink
-          to="/about"
-          id={"about"}
-          onClick={onClick}
-          selected={selected === "about"}
-        >
-          About
-        </StyledLink>
-      ),
-    },
-  ];
-
   return (
-    <StyledAntDropdown
-      menu={{ items }}
-      placement={"bottomLeft"}
-      trigger={"click"}
-    >
-      <Button type={"text"}>
+    <>
+      <Button type={"text"} onClick={() => setOpen(true)}>
         <MenuOutlined />
       </Button>
-    </StyledAntDropdown>
+      <StyledModal
+        destroyOnClose
+        open={open}
+        onOk={() => setOpen(false)}
+        onCancel={() => setOpen(false)}
+        footer={null}
+        title={<ModalTitle />}
+        closeIcon={<ModalIcon />}
+      >
+        <FullScreenModalContent>
+          <DoubleBlobStyledImage
+            onContextMenu={(e) => e.preventDefault()}
+            src={WildHeartSVG}
+            alt={"Double Blob"}
+          />
+          <LinksContainer>
+            <StyledLink
+              to="/"
+              id={"home"}
+              onClick={onClick}
+              selected={selected === "home"}
+            >
+              Home
+            </StyledLink>
+            <StyledLink
+              to="/"
+              id={"product-design"}
+              onClick={onClick}
+              selected={selected === "product-design"}
+            >
+              Product Design
+            </StyledLink>
+            <StyledLink
+              to="/graphic-design"
+              id={"graphic-design"}
+              onClick={onClick}
+              selected={selected === "graphic-design"}
+            >
+              Graphic Design
+            </StyledLink>
+            <StyledLink
+              to="/about"
+              id={"about"}
+              onClick={onClick}
+              selected={selected === "about"}
+            >
+              About
+            </StyledLink>
+          </LinksContainer>
+        </FullScreenModalContent>
+      </StyledModal>
+    </>
   );
 };
