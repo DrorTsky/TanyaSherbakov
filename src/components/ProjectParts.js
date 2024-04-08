@@ -362,7 +362,7 @@ const NextProjectcontainer = styled.div`
   flex-direction: column;
   padding: 91px 107px 32px 107px;
   @media (max-width: 768px) {
-    padding: 50px 15px;
+    padding: 50px 15px 0 15px;
   }
 `;
 
