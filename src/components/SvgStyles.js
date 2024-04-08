@@ -57,16 +57,19 @@ export const HeaderBlueBlobSVGStyle = styled.div`
   width: 31px;
   margin-top: 5px;
   align-self: center;
-  @media (max-width: 768px) {
-    height: 24px;
-    width: 23px;
-  }
   background-image: url(${BlueBlob});
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   &:hover {
     background-image: url(${YellowCircle});
+  }
+  @media (max-width: 768px) {
+    height: 24px;
+    width: 23px;
+    &:hover {
+      background-image: url(${BlueBlob});
+    }
   }
 `;
 
