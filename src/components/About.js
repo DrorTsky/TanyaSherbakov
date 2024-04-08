@@ -112,16 +112,17 @@ const About = () => {
       <InterestsContainer>
         <LearningConainer>
           <BoldedLearningText>What I like</BoldedLearningText>
-          <RegularText>Illustration</RegularText>
+          <RegularText>🖋️ Illustration</RegularText>
           <RegularText>Figma</RegularText>
-          <RegularText>Cats (I am allergic though..)</RegularText>
-          <RegularText>Video games</RegularText>
+          <RegularText>🐈 Cats (I am allergic though..)</RegularText>
+          <RegularText>👾 Video games</RegularText>
         </LearningConainer>
         <LearningConainer>
           <BoldedLearningText>What I'm learning</BoldedLearningText>
           <RegularText>Procreate</RegularText>
-          <RegularText>Copyright & Storytelling</RegularText>
+          <RegularText>✍🏻 Copywriting & Storytelling</RegularText>
           <RegularText>Branding</RegularText>
+          <RegularText>🎤 Singing</RegularText>
         </LearningConainer>
       </InterestsContainer>
     </Container>
