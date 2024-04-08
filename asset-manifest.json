@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/tanyasherbakov/static/css/main.8703f680.css",
-    "main.js": "/tanyasherbakov/static/js/main.13e2523b.js",
+    "main.js": "/tanyasherbakov/static/js/main.c21b57bc.js",
     "static/js/787.08110660.chunk.js": "/tanyasherbakov/static/js/787.08110660.chunk.js",
     "static/media/Patzanki 6.webp": "/tanyasherbakov/static/media/Patzanki 6.1686a936da82102728a0.webp",
     "static/media/Magazines 2.webp": "/tanyasherbakov/static/media/Magazines 2.c3055611371b881dc4aa.webp",
@@ -15,6 +15,7 @@
     "static/media/Ichi-mockups-3.webp": "/tanyasherbakov/static/media/Ichi-mockups-3.664d8609e9c8f33b3d08.webp",
     "static/media/Ichi-accesability.webp": "/tanyasherbakov/static/media/Ichi-accesability.deb3930ea9e09f49f507.webp",
     "static/media/Marketlog_result_small_2.webp": "/tanyasherbakov/static/media/Marketlog_result_small_2.7ded4f91f7712cbf0a5c.webp",
+    "static/media/WildHeart.svg": "/tanyasherbakov/static/media/WildHeart.25ecf2701418967bb991803eaa486894.svg",
     "static/media/maynooth-mockup-1.webp": "/tanyasherbakov/static/media/maynooth-mockup-1.8b80c927ff32a764d485.webp",
     "static/media/Afterdark.webp": "/tanyasherbakov/static/media/Afterdark.a4574d5f3f3e88dda264.webp",
     "static/media/maynooth-user.webp": "/tanyasherbakov/static/media/maynooth-user.dc77b8ae2dac56535e6c.webp",
@@ -22,6 +23,7 @@
     "static/media/maynooth.webp": "/tanyasherbakov/static/media/maynooth.54a596930263024a36c1.webp",
     "static/media/Patzanki 2.webp": "/tanyasherbakov/static/media/Patzanki 2.0ab07486c7d353a6e8cd.webp",
     "static/media/Marketlog_result_small_1.webp": "/tanyasherbakov/static/media/Marketlog_result_small_1.1037c852e7b51d17f535.webp",
+    "static/media/procreateIcon.svg": "/tanyasherbakov/static/media/procreateIcon.44e6f8d881f0c22d9cfd9f35e47958e9.svg",
     "static/media/about_wildheart.webp": "/tanyasherbakov/static/media/about_wildheart.7f6a4641d1d966c9861c.webp",
     "static/media/Malluable 1.webp": "/tanyasherbakov/static/media/Malluable 1.78dcd8645c7f5c42d5e9.webp",
     "static/media/Patzanki 8.webp": "/tanyasherbakov/static/media/Patzanki 8.92af1ce22df9bd1e4350.webp",
@@ -60,18 +62,25 @@
     "static/media/killbills-pain-points.webp": "/tanyasherbakov/static/media/killbills-pain-points.85a795e39b7c84634b6b.webp",
     "static/media/Patzanki 4.webp": "/tanyasherbakov/static/media/Patzanki 4.58df42c01c35359d6a69.webp",
     "static/media/Patzanki 5.webp": "/tanyasherbakov/static/media/Patzanki 5.c6aefe03cbbfa5490927.webp",
-    "static/media/doubleBlob.webp": "/tanyasherbakov/static/media/doubleBlob.bdd0571004973150501b.webp",
+    "static/media/catIcon.svg": "/tanyasherbakov/static/media/catIcon.7e2d71bec7b871925c109f1e3963a640.svg",
+    "static/media/alienIcon.svg": "/tanyasherbakov/static/media/alienIcon.93eb06fbb99a1f814067036b9b0115a1.svg",
+    "static/media/copyIcon.svg": "/tanyasherbakov/static/media/copyIcon.a03b31a00000fa02f520ee904d01d4ff.svg",
+    "static/media/microphoneIcon.svg": "/tanyasherbakov/static/media/microphoneIcon.28e807d9c6eda1c56f865b88a2583ac6.svg",
+    "static/media/penIcon.svg": "/tanyasherbakov/static/media/penIcon.45f55f0f177991a7f5bab7dccf1ad945.svg",
+    "static/media/figmaIcon.svg": "/tanyasherbakov/static/media/figmaIcon.af4a03f07cbde0f58d6da3a6f9b59663.svg",
     "static/media/israel.webp": "/tanyasherbakov/static/media/israel.f53f7062e525346f87ec.webp",
     "index.html": "/tanyasherbakov/index.html",
     "static/media/arrow.svg": "/tanyasherbakov/static/media/arrow.9866219b7387eafc52bbbfa064761e64.svg",
     "static/media/blueBlob.svg": "/tanyasherbakov/static/media/blueBlob.678092202e957711e364e16d5a6ba9ef.svg",
     "static/media/pinkBlob.svg": "/tanyasherbakov/static/media/pinkBlob.9842ce05604828900a90d8e04017e4c1.svg",
+    "static/media/yellowBlob.svg": "/tanyasherbakov/static/media/yellowBlob.c09615fb13e65746240d718e56d28305.svg",
+    "static/media/YellowCircle.svg": "/tanyasherbakov/static/media/YellowCircle.daf06537bcfdd2fd9805d2afe726b0df.svg",
     "main.8703f680.css.map": "/tanyasherbakov/static/css/main.8703f680.css.map",
-    "main.13e2523b.js.map": "/tanyasherbakov/static/js/main.13e2523b.js.map",
+    "main.c21b57bc.js.map": "/tanyasherbakov/static/js/main.c21b57bc.js.map",
     "787.08110660.chunk.js.map": "/tanyasherbakov/static/js/787.08110660.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8703f680.css",
-    "static/js/main.13e2523b.js"
+    "static/js/main.c21b57bc.js"
   ]
 }
