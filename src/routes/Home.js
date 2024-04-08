@@ -1,6 +1,6 @@
 /** @format */
 
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { ProjectPreview } from "../components/ProjectPreviewParts";
 import { Container, ColumnContainer } from "../components/ProjectPreviewParts";
 import styled from "styled-components";
@@ -61,7 +61,33 @@ const IntroductionContainer = styled(Container)`
   }
 `;
 
+const MobileSegment = () => {
+  return (
+    <>
+      <Container>
+        <IntroductionTextStyle>
+          I'm Tanya, a product designer
+          <br /> based in Israel.&nbsp;
+          <IsraelStyledImage
+            onContextMenu={(e) => e.preventDefault()}
+            src={IsraelWEBP}
+            alt={"Israel"}
+          />
+        </IntroductionTextStyle>
+      </Container>
+      <IntroductionTextStyle>
+        I believe that every great <br />
+        experience starts with asking the
+        <br />
+        right questions 🧠
+      </IntroductionTextStyle>
+    </>
+  );
+};
+
 export const Home = ({ isScrollToId }) => {
+  const [width, setWidth] = useState(window.innerWidth);
+
   useEffect(() => {
     const element = document.getElementById("marketlog");
     if (element && isScrollToId) {
@@ -73,6 +99,16 @@ export const Home = ({ isScrollToId }) => {
     }
   }, [isScrollToId]);
 
+  function handleWindowSizeChange() {
+    setWidth(window.innerWidth);
+  }
+  useEffect(() => {
+    window.addEventListener("resize", handleWindowSizeChange);
+    return () => {
+      window.removeEventListener("resize", handleWindowSizeChange);
+    };
+  }, []);
+
   return (
     <div>
       <IntroductionContainer>
@@ -83,20 +119,26 @@ export const Home = ({ isScrollToId }) => {
         />
         <IntroductionTextContainerStyle>
           <HelloHeaderStyle>Hello!</HelloHeaderStyle>
-          <Container>
-            <IntroductionTextStyle>
-              I'm Tanya, a product designer based in Israel.&nbsp;
-              <IsraelStyledImage
-                onContextMenu={(e) => e.preventDefault()}
-                src={IsraelWEBP}
-                alt={"Israel"}
-              />
-            </IntroductionTextStyle>
-          </Container>
-          <IntroductionTextStyle>
-            I believe that every great experience starts with asking the right
-            questions 🧠
-          </IntroductionTextStyle>
+          {width <= 768 ? (
+            <MobileSegment />
+          ) : (
+            <>
+              <Container>
+                <IntroductionTextStyle>
+                  I'm Tanya, a product designer based in Israel.&nbsp;
+                  <IsraelStyledImage
+                    onContextMenu={(e) => e.preventDefault()}
+                    src={IsraelWEBP}
+                    alt={"Israel"}
+                  />
+                </IntroductionTextStyle>
+              </Container>
+              <IntroductionTextStyle>
+                I believe that every great experience starts with asking the
+                right questions 🧠
+              </IntroductionTextStyle>
+            </>
+          )}
         </IntroductionTextContainerStyle>
       </IntroductionContainer>
       <ProjectPreview
