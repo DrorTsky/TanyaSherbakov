@@ -149,6 +149,7 @@ export const KillBills = () => {
           images={[
             <KillBillsUiGuideStyledImage
               onContextMenu={(e) => e.preventDefault()}
+              key={"UI Guide"}
               src={KillBillsUiGuideWEBP}
             />,
           ]}
@@ -158,10 +159,12 @@ export const KillBills = () => {
           images={[
             <KillBillsMockupStyledImage
               onContextMenu={(e) => e.preventDefault()}
+              key={"Mockups 1"}
               src={KillBillsMockupOneWEBP}
             />,
             <KillBillsMockupStyledImage
               onContextMenu={(e) => e.preventDefault()}
+              key={"Mockups 2"}
               src={KillBillsMockupTwoWEBP}
             />,
           ]}

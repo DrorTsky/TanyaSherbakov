@@ -336,7 +336,11 @@ export const SideHeaderTextAndImage = (props) => {
               />
             </SummaryContainer>
           )}
-          <SubHeaderImage subheader={props.imageHeader} images={props.images} />{" "}
+          <SubHeaderImage
+            subheader={props.imageHeader}
+            images={props.images}
+            key={1}
+          />
         </>
       )}
     </>
