@@ -10,12 +10,14 @@ import {
   DoubleBlobStyledImage,
   YellowBlobMobileSVGStyle,
 } from "../components/SvgStyles";
-const StyledLink = styled(Link)`
+export const StyledLink = styled(Link)`
   text-decoration: none;
   font-style: normal;
   font-weight: 700;
   font-size: 22px;
   line-height: 28px;
+  display: flex;
+  align-items: center;
   color: ${(props) => (props.selected ? "#444CF7" : "#031121")} !important;
 `;
 const Conatiner = styled.div`

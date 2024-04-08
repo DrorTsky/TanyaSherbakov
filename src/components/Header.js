@@ -4,7 +4,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import styled from "styled-components";
 import { HeaderBlueBlobSVGStyle } from "../components/SvgStyles";
-import { Navbar, MobileNavBar } from "./NavBar";
+import { Navbar, MobileNavBar, StyledLink } from "./NavBar";
 
 const NameText = styled.div`
   //   font-family: "Futura PT";
@@ -84,7 +84,9 @@ const Header = ({ setIsScrollToId }) => {
     <MainConatiner hasScrolled={hasScrolled}>
       <Conatiner>
         <HeaderBlueBlobSVGStyle />
-        <NameText>Tanya Sherbakov</NameText>
+        <StyledLink to="/" id={"home"}>
+          Tanya Sherbakov
+        </StyledLink>
       </Conatiner>
       {width <= 768 ? (
         <>
