@@ -10,7 +10,7 @@ import { ReactComponent as YellowBlobSVG } from "../images/yellowBlob.svg";
 import { ReactComponent as ArrowSVG } from "../images/arrow.svg";
 
 const ImageStyle = styled.img`
-  user-select: none;
+  user-select: unset;
 `;
 
 export const IconStyles = styled.div`
@@ -304,7 +304,7 @@ export const KillBillsUiGuideStyledImage = styled(ImageStyle)`
 `;
 
 export const KillBillsMockupStyledImage = styled(ImageStyle)`
-  width: 100%;
+  // width: 100%;
   height: 522px;
 
   @media (max-width: 768px) {
