@@ -275,10 +275,8 @@ export const KillBillsUnderstandingStyledImage = styled(ImageStyle)`
 `;
 
 export const KillBillsPainPointsStyledImage = styled(ImageStyle)`
-  width: 1157.5px;
   height: 518.43px;
   @media (max-width: 768px) {
-    width: 330px;
     height: 151.49px;
   }
 `;
