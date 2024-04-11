@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/tanyasherbakov/static/css/main.8703f680.css",
-    "main.js": "/tanyasherbakov/static/js/main.f4b586e8.js",
+    "main.css": "/tanyasherbakov/static/css/main.9c2a394c.css",
+    "main.js": "/tanyasherbakov/static/js/main.a4847b65.js",
     "static/js/787.08110660.chunk.js": "/tanyasherbakov/static/js/787.08110660.chunk.js",
     "static/media/Patzanki 6.webp": "/tanyasherbakov/static/media/Patzanki 6.1686a936da82102728a0.webp",
     "static/media/Magazines 2.webp": "/tanyasherbakov/static/media/Magazines 2.c3055611371b881dc4aa.webp",
@@ -24,7 +24,6 @@
     "static/media/Patzanki 2.webp": "/tanyasherbakov/static/media/Patzanki 2.0ab07486c7d353a6e8cd.webp",
     "static/media/Marketlog_result_small_1.webp": "/tanyasherbakov/static/media/Marketlog_result_small_1.1037c852e7b51d17f535.webp",
     "static/media/procreateIcon.svg": "/tanyasherbakov/static/media/procreateIcon.44e6f8d881f0c22d9cfd9f35e47958e9.svg",
-    "static/media/about_wildheart.webp": "/tanyasherbakov/static/media/about_wildheart.7f6a4641d1d966c9861c.webp",
     "static/media/Malluable 1.webp": "/tanyasherbakov/static/media/Malluable 1.78dcd8645c7f5c42d5e9.webp",
     "static/media/Patzanki 8.webp": "/tanyasherbakov/static/media/Patzanki 8.92af1ce22df9bd1e4350.webp",
     "static/media/maynooth-takeaways.webp": "/tanyasherbakov/static/media/maynooth-takeaways.94242164c740e8fa5d61.webp",
@@ -53,6 +52,7 @@
     "static/media/maynooth-highfidelity.webp": "/tanyasherbakov/static/media/maynooth-highfidelity.4892962643ecd8ed2f21.webp",
     "static/media/ichi-overview.webp": "/tanyasherbakov/static/media/ichi-overview.5dcb44705b5056c4606f.webp",
     "static/media/maynooth-style-guide.webp": "/tanyasherbakov/static/media/maynooth-style-guide.bdad62530f4ddcaa88b2.webp",
+    "static/media/about_wildheart.webp": "/tanyasherbakov/static/media/about_wildheart.f4febe9de01aaffd14f6.webp",
     "static/media/killbills-starting-design.webp": "/tanyasherbakov/static/media/killbills-starting-design.0c656f529df6a2dab729.webp",
     "static/media/Patzanki 3.webp": "/tanyasherbakov/static/media/Patzanki 3.c7de3383647c2edbbce9.webp",
     "static/media/Ichi-digital-wireframe-1.webp": "/tanyasherbakov/static/media/Ichi-digital-wireframe-1.8de505b3e6a996acc60a.webp",
@@ -75,12 +75,12 @@
     "static/media/pinkBlob.svg": "/tanyasherbakov/static/media/pinkBlob.9842ce05604828900a90d8e04017e4c1.svg",
     "static/media/yellowBlob.svg": "/tanyasherbakov/static/media/yellowBlob.c09615fb13e65746240d718e56d28305.svg",
     "static/media/YellowCircle.svg": "/tanyasherbakov/static/media/YellowCircle.daf06537bcfdd2fd9805d2afe726b0df.svg",
-    "main.8703f680.css.map": "/tanyasherbakov/static/css/main.8703f680.css.map",
-    "main.f4b586e8.js.map": "/tanyasherbakov/static/js/main.f4b586e8.js.map",
+    "main.9c2a394c.css.map": "/tanyasherbakov/static/css/main.9c2a394c.css.map",
+    "main.a4847b65.js.map": "/tanyasherbakov/static/js/main.a4847b65.js.map",
     "787.08110660.chunk.js.map": "/tanyasherbakov/static/js/787.08110660.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8703f680.css",
-    "static/js/main.f4b586e8.js"
+    "static/css/main.9c2a394c.css",
+    "static/js/main.a4847b65.js"
   ]
 }
