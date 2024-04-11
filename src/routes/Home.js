@@ -90,6 +90,7 @@ export const Home = ({ isScrollToId }) => {
 
   useEffect(() => {
     const element = document.getElementById("marketlog");
+    console.log(isScrollToId);
     if (element && isScrollToId) {
       element.scrollIntoView({
         behavior: "smooth",

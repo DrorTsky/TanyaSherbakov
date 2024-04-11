@@ -160,6 +160,7 @@ export const MobileNavBar = ({ setIsScrollToId }) => {
   const [open, setOpen] = useState(false);
 
   function onClick(event) {
+    console.log("event.target.id", event.target.id);
     if (event.target.id === "product-design") {
       setIsScrollToId(true);
     } else {
@@ -171,9 +172,9 @@ export const MobileNavBar = ({ setIsScrollToId }) => {
 
   return (
     <>
-      <Button type={"text"} onClick={() => setOpen(true)}>
+      <div type={"text"} onClick={() => setOpen(true)}>
         <MenuOutlined />
-      </Button>
+      </div>
       <StyledModal
         destroyOnClose
         open={open}
