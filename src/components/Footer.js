@@ -1,13 +1,15 @@
 /** @format */
 
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { BlueBlobSVGStyle } from "./SvgStyles";
 import { Divider } from "./ProjectPreviewParts";
+import { message } from "antd";
 
 const Container = styled.div`
   display: flex;
   flex-direction: column;
   padding: 0 107px 143px 107px;
+
   @media (max-width: 768px) {
     padding: 50px 15px;
   }
@@ -42,7 +44,7 @@ const LinksContainer = styled.div`
     gap: 24px;
   }
 `;
-const LinkTextStyle = styled.a`
+const LinkTextStyleCss = css`
   text-decoration: none;
   font-style: normal;
   font-weight: 700;
@@ -50,19 +52,66 @@ const LinkTextStyle = styled.a`
   line-height: 28px;
   color: #031121;
 `;
+const LinkTextStyle = styled.a`
+  ${LinkTextStyleCss}
+`;
+const CopyTextStyle = styled.div`
+  ${LinkTextStyleCss}
+  :hover {
+    cursor: pointer;
+  }
+`;
 export const Footer = () => {
+  const [messageApi, contextHolder] = message.useMessage();
+
+  const info = () => {
+    messageApi.open({
+      type: "success",
+      content: "Copied to Clipboard",
+      duration: 2,
+    });
+  };
   return (
     <Container>
       <Divider />
+      {contextHolder}
       <HeaderContainer>
         <BlueBlobSVGStyle />
         <TextStyle>Contact</TextStyle>
       </HeaderContainer>
       <LinksContainer>
-        <LinkTextStyle href={""}>Linkedin</LinkTextStyle>
-        <LinkTextStyle href={""}>Instagram</LinkTextStyle>
-        <LinkTextStyle href={""}>Email</LinkTextStyle>
-        <LinkTextStyle href={""}>Resume</LinkTextStyle>
+        <LinkTextStyle
+          href={"https://www.linkedin.com/in/tanya-sherbakov"}
+          target="_blank"
+        >
+          Linkedin
+        </LinkTextStyle>
+        <LinkTextStyle
+          href={
+            "https://www.instagram.com/tanjasherart/?igsh=MWh0Y3JjaTd5M2NwaA%3D%3D"
+          }
+          target="_blank"
+        >
+          Instagram
+        </LinkTextStyle>
+        <CopyTextStyle
+          onClick={() => {
+            navigator.clipboard.writeText("Copy");
+            info();
+          }}
+        >
+          Email
+        </CopyTextStyle>
+        <CopyTextStyle
+          onClick={(e) => {
+            window.open(
+              "https://drive.google.com/u/1/uc?id=1OGIFE0gkZiVxxgiK_yjtOmPrHzkj26z7&export=download",
+              "_blank"
+            );
+          }}
+        >
+          Resume
+        </CopyTextStyle>
       </LinksContainer>
     </Container>
   );
