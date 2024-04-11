@@ -61,15 +61,16 @@ const CopyTextStyle = styled.div`
     cursor: pointer;
   }
 `;
-export const Footer = () => {
+export const Footer = ({ width }) => {
   const [messageApi, contextHolder] = message.useMessage();
 
   const info = () => {
-    messageApi.open({
-      type: "success",
-      content: "Copied to Clipboard",
-      duration: 2,
-    });
+    if (width > 768)
+      messageApi.open({
+        type: "success",
+        content: "Copied to Clipboard",
+        duration: 2,
+      });
   };
   return (
     <Container>

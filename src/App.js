@@ -25,11 +25,23 @@ function ScrollToTop() {
 }
 
 function App() {
+  const [width, setWidth] = useState(window.innerWidth);
   const [isScrollToId, setIsScrollToId] = useState(false);
+
+  function handleWindowSizeChange() {
+    setWidth(window.innerWidth);
+  }
+  useEffect(() => {
+    window.addEventListener("resize", handleWindowSizeChange);
+    return () => {
+      window.removeEventListener("resize", handleWindowSizeChange);
+    };
+  }, []);
+
   return (
     <>
       <ScrollToTop />
-      <Header setIsScrollToId={setIsScrollToId} />
+      <Header setIsScrollToId={setIsScrollToId} width={width} />
       <Routes>
         <Route path="/" exact element={<Home isScrollToId={isScrollToId} />} />
         <Route path="/MarketLog" element={<MarketLog />} />
@@ -39,7 +51,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/graphic-design" element={<GraphicDesign />} />
       </Routes>
-      <Footer />
+      <Footer width={width} />
     </>
   );
 }

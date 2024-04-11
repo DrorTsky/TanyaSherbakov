@@ -48,8 +48,7 @@ const Conatiner = styled.div`
   }
 `;
 
-const Header = ({ setIsScrollToId }) => {
-  const [width, setWidth] = useState(window.innerWidth);
+const Header = ({ setIsScrollToId, width }) => {
   const [hasScrolled, setHasScrolled] = useState(false);
 
   useEffect(() => {
@@ -67,16 +66,6 @@ const Header = ({ setIsScrollToId }) => {
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
-  function handleWindowSizeChange() {
-    setWidth(window.innerWidth);
-  }
-  useEffect(() => {
-    window.addEventListener("resize", handleWindowSizeChange);
-    return () => {
-      window.removeEventListener("resize", handleWindowSizeChange);
     };
   }, []);
 
