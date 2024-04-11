@@ -29,6 +29,7 @@ const SummaryContainer = styled.div`
   gap: 76px;
   padding-bottom: 50px;
   padding-top: 93px;
+  align-items: center;
   @media (max-width: 768px) {
     flex-direction: column-reverse;
     padding-top: 36px;
@@ -38,7 +39,7 @@ const SummaryContainer = styled.div`
 const SummaryTextContainer = styled.div`
   display: flex;
   flex-direction: column;
-  width: 58%;
+  width: 70%;
   gap: 26px;
   padding-top: 5%;
   @media (max-width: 768px) {
