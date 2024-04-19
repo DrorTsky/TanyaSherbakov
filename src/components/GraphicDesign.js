@@ -130,7 +130,7 @@ const GraphicDesign = () => {
   const isMobile = useMobileScreen();
 
   return (
-    <>
+    <div style={{ paddingTop: "90px" }}>
       <ProjectContainer>
         <Project
           gap={""}
@@ -249,7 +249,7 @@ const GraphicDesign = () => {
           </DoubleImage>
         </Images>
       </ProjectContainer>
-    </>
+    </div>
   );
 };
 
