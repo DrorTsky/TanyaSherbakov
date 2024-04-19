@@ -147,8 +147,7 @@ export const MarketlogPreviewStyledImage = styled(ImageStyle)`
 
 export const KillbillsPreviewStyledImage = styled(ImageStyle)`
   pointer-events: none;
-  width: 1359.19px;
-  height: 618px;
+  width: 100%;
   @media (max-width: 768px) {
     width: 330px;
     height: 149px;
