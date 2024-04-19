@@ -39,7 +39,7 @@ function App() {
   }, []);
 
   return (
-    <>
+    <div style={{ width: "100%" }}>
       <ScrollToTop />
       <Header setIsScrollToId={setIsScrollToId} width={width} />
       <Routes>
@@ -52,7 +52,7 @@ function App() {
         <Route path="/graphic-design" element={<GraphicDesign />} />
       </Routes>
       <Footer width={width} />
-    </>
+    </div>
   );
 }
 
