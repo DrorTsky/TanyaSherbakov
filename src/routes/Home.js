@@ -151,10 +151,12 @@ export const Home = ({ isScrollToId }) => {
         blob={"blue"}
         id={"marketlog"}
       >
-        <MarketlogPreviewStyledImage
-          src={MarketLogWEBPStyle}
-          alt={"Market Log"}
-        />
+        <a href="#/MarketLog">
+          <MarketlogPreviewStyledImage
+            src={MarketLogWEBPStyle}
+            alt={"Market Log"}
+          />
+        </a>
       </ProjectPreview>
       <ProjectPreview
         text={
@@ -165,10 +167,12 @@ export const Home = ({ isScrollToId }) => {
         year={2022}
         blob={"pink"}
       >
-        <KillbillsPreviewStyledImage
-          src={KillbillsWEBPStyle}
-          alt={"KillBills"}
-        />
+        <a href="#/KillBills">
+          <KillbillsPreviewStyledImage
+            src={KillbillsWEBPStyle}
+            alt={"KillBills"}
+          />
+        </a>
       </ProjectPreview>
       <ProjectPreview
         text={
@@ -179,11 +183,13 @@ export const Home = ({ isScrollToId }) => {
         year={2021}
         blob={"blue"}
       >
-        <IchiPreviewStyledImage
-          onContextMenu={(e) => e.preventDefault()}
-          src={IchiWEBPStyle}
-          alt={"Ichi"}
-        />
+        <a href={"#/Ichi"}>
+          <IchiPreviewStyledImage
+            onContextMenu={(e) => e.preventDefault()}
+            src={IchiWEBPStyle}
+            alt={"Ichi"}
+          />
+        </a>
       </ProjectPreview>
       <ProjectPreview
         text={
@@ -194,11 +200,13 @@ export const Home = ({ isScrollToId }) => {
         year={2021}
         blob={"pink"}
       >
-        <MaynoothPreviewStyledImage
-          onContextMenu={(e) => e.preventDefault()}
-          src={MaynoothWEBPStyle}
-          alt={"Maynooth"}
-        />
+        <a href={"#/Maynooth"}>
+          <MaynoothPreviewStyledImage
+            onContextMenu={(e) => e.preventDefault()}
+            src={MaynoothWEBPStyle}
+            alt={"Maynooth"}
+          />
+        </a>
       </ProjectPreview>
     </div>
   );
