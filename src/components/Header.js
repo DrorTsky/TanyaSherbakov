@@ -48,8 +48,9 @@ const Conatiner = styled.div`
   }
 `;
 
-const Header = ({ setIsScrollToId, width }) => {
+const Header = ({ setIsScrollToId, setScrollTo, width }) => {
   const [hasScrolled, setHasScrolled] = useState(false);
+  const [selected, setSelected] = useState("home");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -69,21 +70,44 @@ const Header = ({ setIsScrollToId, width }) => {
     };
   }, []);
 
+  function setScroll(link) {
+    if (["home", "product-design"].includes(link)) {
+      setScrollTo(link);
+    }
+  }
+
   return (
     <MainConatiner hasScrolled={hasScrolled}>
       <Conatiner>
         <HeaderBlueBlobSVGStyle />
-        <StyledLink to="/" id={"home"}>
+        <StyledLink
+          to="/"
+          id={"home"}
+          onClick={(event) => {
+            setScroll(event.target.id);
+            setSelected(event.target.id);
+          }}
+        >
           Tanya Sherbakov
         </StyledLink>
       </Conatiner>
       {width <= 768 ? (
         <>
-          <MobileNavBar setIsScrollToId={setIsScrollToId} />
+          <MobileNavBar
+            setIsScrollToId={setIsScrollToId}
+            setScroll={setScroll}
+            selected={selected}
+            setSelected={setSelected}
+          />
         </>
       ) : (
         <>
-          <Navbar setIsScrollToId={setIsScrollToId} />
+          <Navbar
+            setIsScrollToId={setIsScrollToId}
+            setScroll={setScroll}
+            selected={selected}
+            setSelected={setSelected}
+          />
         </>
       )}
     </MainConatiner>

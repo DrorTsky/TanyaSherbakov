@@ -26,16 +26,12 @@ const Conatiner = styled.div`
   align-items: center;
 `;
 
-export const Navbar = ({ setIsScrollToId }) => {
-  const [selected, setSelected] = useState("home");
+export const Navbar = ({ setScroll, selected, setSelected }) => {
   function onClick(event) {
-    if (event.target.id === "product-design") {
-      setIsScrollToId(true);
-    } else {
-      setIsScrollToId(false);
-    }
+    setScroll(event.target.id);
     setSelected(event.target.id);
   }
+
   return (
     <Conatiner>
       <StyledLink
@@ -148,24 +144,25 @@ const ModalTitle = () => {
 const ModalIcon = (props) => {
   return (
     <ButtonContainer>
-      <Button type={"text"} {...props}>
-        <CloseOutlined style={{ fontSize: "16px" }} />
-      </Button>
+      <div type={"text"} {...props}>
+        <CloseOutlined style={{ fontSize: "16px", color: "black" }} />
+      </div>
     </ButtonContainer>
   );
 };
 
-export const MobileNavBar = ({ setIsScrollToId }) => {
-  const [selected, setSelected] = useState("home");
+export const MobileNavBar = ({ setScroll, selected, setSelected }) => {
   const [open, setOpen] = useState(false);
 
   function onClick(event) {
     console.log("event.target.id", event.target.id);
-    if (event.target.id === "product-design") {
-      setIsScrollToId(true);
-    } else {
-      setIsScrollToId(false);
-    }
+    alert(event.target.id);
+    setScroll(event.target.id);
+    // if (event.target.id === "product-design") {
+    //   setIsScrollToId(true);
+    // } else {
+    //   setIsScrollToId(false);
+    // }
     setSelected(event.target.id);
     setOpen(false);
   }

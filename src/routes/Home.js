@@ -85,19 +85,24 @@ const MobileSegment = () => {
   );
 };
 
-export const Home = ({ isScrollToId }) => {
+export const Home = ({ scrollTo }) => {
   const [width, setWidth] = useState(window.innerWidth);
 
   useEffect(() => {
     const element = document.getElementById("marketlog");
-    if (element && isScrollToId) {
+    if (scrollTo === "product-design") {
       element.scrollIntoView({
         behavior: "smooth",
         block: "center",
         inline: "nearest",
       });
+    } else {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth", // Optional: Smooth scrolling animation
+      });
     }
-  }, [isScrollToId]);
+  }, [scrollTo]);
 
   function handleWindowSizeChange() {
     setWidth(window.innerWidth);
