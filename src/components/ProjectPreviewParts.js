@@ -8,6 +8,8 @@ import {
 import React from "react";
 import styled from "styled-components";
 import { Button } from "antd";
+import { useDispatch } from "react-redux";
+import { setSelectedNav } from "../store";
 
 const Icon = styled.div``;
 const ProjectNameText = styled.div`
@@ -128,12 +130,18 @@ const StyledArrowIcon = styled(Button)`
 
 export const ProjectLink = (props) => {
   const { link, color, fontSize, text } = props;
+  const dispatch = useDispatch();
   return (
     <Container>
       <ProjectLinkText fontSize={fontSize}>
         {text ?? "View Project"}
       </ProjectLinkText>
-      <Link to={link}>
+      <Link
+        to={link}
+        onClick={() => {
+          dispatch(setSelectedNav("product-design"));
+        }}
+      >
         <StyledArrowIcon type={"link"}>
           <ArrowSVGStyle color={color} />
         </StyledArrowIcon>

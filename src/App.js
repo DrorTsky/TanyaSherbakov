@@ -26,7 +26,6 @@ function ScrollToTop() {
 
 function App() {
   const [width, setWidth] = useState(window.innerWidth);
-  const [scrollTo, setScrollTo] = useState("home");
 
   function handleWindowSizeChange() {
     setWidth(window.innerWidth);
@@ -41,9 +40,9 @@ function App() {
   return (
     <div style={{ width: "100%" }}>
       <ScrollToTop />
-      <Header setScrollTo={setScrollTo} width={width} />
+      <Header width={width} />
       <Routes>
-        <Route path="/" exact element={<Home scrollTo={scrollTo} />} />
+        <Route path="/" exact element={<Home />} />
         <Route path="/MarketLog" element={<MarketLog />} />
         <Route path="/KillBills" element={<KillBills />} />
         <Route path="/Ichi" element={<Ichi />} />

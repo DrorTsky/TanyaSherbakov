@@ -5,6 +5,8 @@ import { useState, useEffect } from "react";
 import styled from "styled-components";
 import { HeaderBlueBlobSVGStyle } from "../components/SvgStyles";
 import { Navbar, MobileNavBar, StyledLink } from "./NavBar";
+import { useDispatch } from "react-redux";
+import { setSelectedNav } from "../store";
 
 const NameText = styled.div`
   //   font-family: "Futura PT";
@@ -48,9 +50,9 @@ const Conatiner = styled.div`
   }
 `;
 
-const Header = ({ setIsScrollToId, setScrollTo, width }) => {
+const Header = ({ width }) => {
   const [hasScrolled, setHasScrolled] = useState(false);
-  const [selected, setSelected] = useState("home");
+  const dispatch = useDispatch();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -70,12 +72,6 @@ const Header = ({ setIsScrollToId, setScrollTo, width }) => {
     };
   }, []);
 
-  function setScroll(link) {
-    if (["home", "product-design"].includes(link)) {
-      setScrollTo(link);
-    }
-  }
-
   return (
     <MainConatiner hasScrolled={hasScrolled}>
       <Conatiner>
@@ -84,8 +80,7 @@ const Header = ({ setIsScrollToId, setScrollTo, width }) => {
           to="/"
           id={"home"}
           onClick={(event) => {
-            setScroll(event.target.id);
-            setSelected(event.target.id);
+            dispatch(setSelectedNav(event.target.id));
           }}
         >
           Tanya Sherbakov
@@ -94,19 +89,17 @@ const Header = ({ setIsScrollToId, setScrollTo, width }) => {
       {width <= 768 ? (
         <>
           <MobileNavBar
-            setIsScrollToId={setIsScrollToId}
-            setScroll={setScroll}
-            selected={selected}
-            setSelected={setSelected}
+            setSelected={(value) => {
+              dispatch(setSelectedNav(value));
+            }}
           />
         </>
       ) : (
         <>
           <Navbar
-            setIsScrollToId={setIsScrollToId}
-            setScroll={setScroll}
-            selected={selected}
-            setSelected={setSelected}
+            setSelected={(value) => {
+              dispatch(setSelectedNav(value));
+            }}
           />
         </>
       )}

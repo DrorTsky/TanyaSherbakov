@@ -18,6 +18,8 @@ import KillbillsWEBPStyle from "../images/killbills.webp";
 import MaynoothWEBPStyle from "../images/maynooth.webp";
 import WildHeartSVG from "../images/WildHeart.svg";
 import IsraelWEBP from "../images/israel.webp";
+import { useDispatch, useSelector } from "react-redux";
+import { setSelectedNav } from "../store";
 
 const IntroductionTextStyle = styled.div`
   font-style: normal;
@@ -85,12 +87,14 @@ const MobileSegment = () => {
   );
 };
 
-export const Home = ({ scrollTo }) => {
+export const Home = () => {
   const [width, setWidth] = useState(window.innerWidth);
+  const { scroll } = useSelector((state) => state.selected);
+  const dispatch = useDispatch();
 
   useEffect(() => {
     const element = document.getElementById("marketlog");
-    if (scrollTo === "product-design") {
+    if (scroll === "product-design") {
       element.scrollIntoView({
         behavior: "smooth",
         block: "center",
@@ -102,7 +106,7 @@ export const Home = ({ scrollTo }) => {
         behavior: "smooth", // Optional: Smooth scrolling animation
       });
     }
-  }, [scrollTo]);
+  }, [scroll]);
 
   function handleWindowSizeChange() {
     setWidth(window.innerWidth);
@@ -113,6 +117,10 @@ export const Home = ({ scrollTo }) => {
       window.removeEventListener("resize", handleWindowSizeChange);
     };
   }, []);
+
+  const moveToProductDesign = () => {
+    dispatch(setSelectedNav("product-design"));
+  };
 
   return (
     <div>
@@ -156,7 +164,7 @@ export const Home = ({ scrollTo }) => {
         blob={"blue"}
         id={"marketlog"}
       >
-        <a href="#/MarketLog">
+        <a href="#/MarketLog" onClick={moveToProductDesign}>
           <MarketlogPreviewStyledImage
             src={MarketLogWEBPStyle}
             alt={"Market Log"}
@@ -172,7 +180,7 @@ export const Home = ({ scrollTo }) => {
         year={2022}
         blob={"pink"}
       >
-        <a href="#/KillBills">
+        <a href="#/KillBills" onClick={moveToProductDesign}>
           <KillbillsPreviewStyledImage
             src={KillbillsWEBPStyle}
             alt={"KillBills"}
@@ -188,7 +196,7 @@ export const Home = ({ scrollTo }) => {
         year={2021}
         blob={"blue"}
       >
-        <a href={"#/Ichi"}>
+        <a href={"#/Ichi"} onClick={moveToProductDesign}>
           <IchiPreviewStyledImage
             onContextMenu={(e) => e.preventDefault()}
             src={IchiWEBPStyle}
@@ -205,7 +213,7 @@ export const Home = ({ scrollTo }) => {
         year={2021}
         blob={"pink"}
       >
-        <a href={"#/Maynooth"}>
+        <a href={"#/Maynooth"} onClick={moveToProductDesign}>
           <MaynoothPreviewStyledImage
             onContextMenu={(e) => e.preventDefault()}
             src={MaynoothWEBPStyle}

@@ -3,7 +3,8 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import { Button, Dropdown, Modal } from "antd";
+import { Modal } from "antd";
+import { useSelector } from "react-redux";
 import { MenuOutlined, CloseOutlined } from "@ant-design/icons";
 import WildHeartSVG from "../images/WildHeart.svg";
 import {
@@ -26,9 +27,9 @@ const Conatiner = styled.div`
   align-items: center;
 `;
 
-export const Navbar = ({ setScroll, selected, setSelected }) => {
+export const Navbar = ({ setSelected }) => {
+  const { selected } = useSelector((state) => state.selected);
   function onClick(event) {
-    setScroll(event.target.id);
     setSelected(event.target.id);
   }
 
@@ -151,18 +152,13 @@ const ModalIcon = (props) => {
   );
 };
 
-export const MobileNavBar = ({ setScroll, selected, setSelected }) => {
+export const MobileNavBar = ({ setSelected }) => {
   const [open, setOpen] = useState(false);
+  const { selected } = useSelector((state) => state.selected);
 
   function onClick(event) {
     console.log("event.target.id", event.target.id);
     alert(event.target.id);
-    setScroll(event.target.id);
-    // if (event.target.id === "product-design") {
-    //   setIsScrollToId(true);
-    // } else {
-    //   setIsScrollToId(false);
-    // }
     setSelected(event.target.id);
     setOpen(false);
   }
