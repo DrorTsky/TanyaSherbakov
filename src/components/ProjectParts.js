@@ -1,7 +1,8 @@
 /** @format */
-
+import React from "react";
 import styled from "styled-components";
 import { Divider, ProjectLink, DividerLine } from "./ProjectPreviewParts";
+import { v4 as uuidv4 } from "uuid";
 // import { Button } from "antd";
 
 export const Container = styled.div`
@@ -210,7 +211,7 @@ export const TextsImageRow = ({
 }) => {
   const description = texts?.map((text, index) => {
     return (
-      <ParagraphContainer key={index}>
+      <ParagraphContainer key={uuidv4()}>
         {headers?.[index] && (
           <ParagraphHeader>{headers?.[index]}</ParagraphHeader>
         )}
@@ -227,7 +228,7 @@ export const TextsImageRow = ({
     return (
       <StyledLink
         href={link}
-        key={index}
+        key={uuidv4()}
         target="_blank"
         rel="noreferrer noopener"
       >
@@ -281,7 +282,12 @@ export const SubHeaderImage = ({ subheader, images }) => {
   return (
     <>
       {subheader && <UserSubHeader>{subheader}</UserSubHeader>}
-      {images && images}
+      {/* {images && images} */}
+      {images &&
+        images.map((image) =>
+          // Add key prop to each <img> tag
+          React.cloneElement(image, { key: uuidv4() })
+        )}
     </>
   );
 };
@@ -289,10 +295,12 @@ export const SubHeaderImage = ({ subheader, images }) => {
 export const HeadersAndLists = ({ items }) => {
   const allItems = items.map(({ header, listItems }) => {
     const list = listItems?.map((listItem, index) => (
-      <StyledParagraphText>{`${index}) ${listItem}`}</StyledParagraphText>
+      <StyledParagraphText
+        key={uuidv4()}
+      >{`${index}) ${listItem}`}</StyledParagraphText>
     ));
     return (
-      <InlineLessContainer>
+      <InlineLessContainer key={uuidv4()}>
         <ParagraphHeader>{header}</ParagraphHeader>
         {list && <ListContainer> {list}</ListContainer>}
       </InlineLessContainer>
@@ -336,11 +344,7 @@ export const SideHeaderTextAndImage = (props) => {
               />
             </SummaryContainer>
           )}
-          <SubHeaderImage
-            subheader={props.imageHeader}
-            images={props.images}
-            key={1}
-          />
+          <SubHeaderImage subheader={props.imageHeader} images={props.images} />
         </>
       )}
     </>

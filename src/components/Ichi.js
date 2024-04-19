@@ -1,5 +1,6 @@
 /** @format */
 import styled from "styled-components";
+import { v4 as uuidv4 } from "uuid";
 import {
   ProjectDescription,
   TextsImageRow,
@@ -51,21 +52,23 @@ const understandingTheUserTextImagesData = [
   {
     header: "User research: summary",
     text: "I conducted interviews and created empathy maps to understand the users I'm designing for and their needs. A primary user group identified through researchwas working adults who don’t have time to cook meals.<br> This user group confirmed initial assumptions about Ichi customers, but research also revealed thattime was not the only factor limiting users from cooking at home. Other user problems includedobligations, interests, or challenges that make it difficult to get groceries for cooking or go to restaurants in-person.",
-
     imageHeader: "Pain points",
     images: [
       <KillBillsPainPointsStyledImage
         onContextMenu={(e) => e.preventDefault()}
+        key={uuidv4()}
         src={IchiPainPointsWEBP}
       />,
     ],
   },
   {
     header: "Meet the user",
+    key: "user",
     text: "Adam is about to complete his B.Sc in Program Engineering, and hopes that the internship will launch their career. Adam finds himself very busy during the day and has no time for food prep. After a long day he is looking to order a delivery from his favorite sushi restaurant and relax.",
     images: [
       <IchiUserStyledImage
         onContextMenu={(e) => e.preventDefault()}
+        key={uuidv4()}
         src={IchiUserWEBP}
       />,
     ],
@@ -80,6 +83,7 @@ const understandingTheUserTextImagesData = [
     images: [
       <IchiMapStyledImage
         onContextMenu={(e) => e.preventDefault()}
+        key={uuidv4()}
         src={IchiMapWEBP}
       />,
     ],
@@ -112,6 +116,7 @@ const refiningTheDesignTextImagesData = [
     images: [
       <IchiBeforeAfterStyledImage
         onContextMenu={(e) => e.preventDefault()}
+        key={uuidv4()}
         src={IchiBeforeAfterOneWEBP}
       />,
     ],
@@ -121,6 +126,7 @@ const refiningTheDesignTextImagesData = [
     images: [
       <IchiBeforeAfterStyledImage
         onContextMenu={(e) => e.preventDefault()}
+        key={uuidv4()}
         src={IchiBeforeAfterTwoWEBP}
       />,
     ],
@@ -129,6 +135,7 @@ const refiningTheDesignTextImagesData = [
     images: [
       <IchiMockupStyledImage
         onContextMenu={(e) => e.preventDefault()}
+        key={uuidv4()}
         src={IchiMockupWEBP}
       />,
     ],
@@ -146,6 +153,7 @@ const refiningTheDesignTextImagesData = [
     ],
     image: (
       <IchiHighfidelityStyledImage
+        key={uuidv4()}
         onContextMenu={(e) => e.preventDefault()}
         src={IchiHighfidelityWEBP}
       />
@@ -155,10 +163,10 @@ const refiningTheDesignTextImagesData = [
 
 const Ichi = () => {
   const understandingTheUserTextImages = understandingTheUserTextImagesData.map(
-    (TextImage) => <SideHeaderTextAndImage {...TextImage} />
+    (TextImage) => <SideHeaderTextAndImage {...TextImage} key={uuidv4()} />
   );
   const refiningTheDesignTextImages = refiningTheDesignTextImagesData.map(
-    (TextImage) => <SideHeaderTextAndImage {...TextImage} />
+    (TextImage) => <SideHeaderTextAndImage {...TextImage} key={uuidv4()} />
   );
 
   return (
@@ -215,10 +223,12 @@ const Ichi = () => {
             <DigitalWireframesContainer>
               <IchiDigitalStyledImage
                 onContextMenu={(e) => e.preventDefault()}
+                key={uuidv4()}
                 src={IchiWireframeWEBP}
               />
               <IchiDigitalStyledImage
                 onContextMenu={(e) => e.preventDefault()}
+                key={uuidv4()}
                 src={IchiWireframeTwoWEBP}
               />
             </DigitalWireframesContainer>,
