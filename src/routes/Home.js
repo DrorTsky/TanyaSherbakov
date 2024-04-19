@@ -93,7 +93,6 @@ export const Home = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    alert(scroll);
     const element = document.getElementById("marketlog");
     if (scroll === "product-design") {
       element.scrollIntoView({
