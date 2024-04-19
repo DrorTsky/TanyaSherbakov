@@ -5,6 +5,7 @@ import { configureStore, createSlice } from "@reduxjs/toolkit";
 const initialState = {
   selected: "home",
   scroll: "top",
+  isScroll: false,
 };
 
 // Define a slice using createSlice
@@ -17,6 +18,7 @@ const selectedSlice = createSlice({
       state.selected = action.payload;
       if (["home", "product-design"].includes(action.payload)) {
         state.scroll = action.payload;
+        state.isScroll = !state.isScroll;
       }
     },
     setScroll: (state, action) => {

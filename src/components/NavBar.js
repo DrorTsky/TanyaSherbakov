@@ -157,8 +157,6 @@ export const MobileNavBar = ({ setSelected }) => {
   const { selected } = useSelector((state) => state.selected);
 
   function onClick(event) {
-    console.log("event.target.id", event.target.id);
-    alert(event.target.id);
     setSelected(event.target.id);
     setOpen(false);
   }

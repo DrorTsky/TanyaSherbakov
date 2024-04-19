@@ -89,10 +89,11 @@ const MobileSegment = () => {
 
 export const Home = () => {
   const [width, setWidth] = useState(window.innerWidth);
-  const { scroll } = useSelector((state) => state.selected);
+  const { scroll, isScroll } = useSelector((state) => state.selected);
   const dispatch = useDispatch();
 
   useEffect(() => {
+    alert(scroll);
     const element = document.getElementById("marketlog");
     if (scroll === "product-design") {
       element.scrollIntoView({
@@ -106,7 +107,7 @@ export const Home = () => {
         behavior: "smooth", // Optional: Smooth scrolling animation
       });
     }
-  }, [scroll]);
+  }, [isScroll]);
 
   function handleWindowSizeChange() {
     setWidth(window.innerWidth);
