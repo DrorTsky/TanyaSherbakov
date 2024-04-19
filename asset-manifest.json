@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.9c2a394c.css",
-    "main.js": "/static/js/main.5091ac33.js",
+    "main.js": "/static/js/main.7ae4630d.js",
     "static/js/787.08110660.chunk.js": "/static/js/787.08110660.chunk.js",
     "static/media/Patzanki 6.webp": "/static/media/Patzanki 6.1686a936da82102728a0.webp",
     "static/media/Magazines 2.webp": "/static/media/Magazines 2.c3055611371b881dc4aa.webp",
@@ -76,11 +76,11 @@
     "static/media/yellowBlob.svg": "/static/media/yellowBlob.c09615fb13e65746240d718e56d28305.svg",
     "static/media/YellowCircle.svg": "/static/media/YellowCircle.daf06537bcfdd2fd9805d2afe726b0df.svg",
     "main.9c2a394c.css.map": "/static/css/main.9c2a394c.css.map",
-    "main.5091ac33.js.map": "/static/js/main.5091ac33.js.map",
+    "main.7ae4630d.js.map": "/static/js/main.7ae4630d.js.map",
     "787.08110660.chunk.js.map": "/static/js/787.08110660.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9c2a394c.css",
-    "static/js/main.5091ac33.js"
+    "static/js/main.7ae4630d.js"
   ]
 }
