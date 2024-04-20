@@ -1,9 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.9c2a394c.css",
-    "main.js": "/static/js/main.7f7de94e.js",
+    "main.js": "/static/js/main.6bd5296c.js",
     "static/js/787.08110660.chunk.js": "/static/js/787.08110660.chunk.js",
-    "static/media/Patzanki 6.webp": "/static/media/Patzanki 6.1686a936da82102728a0.webp",
     "static/media/Magazines 2.webp": "/static/media/Magazines 2.c3055611371b881dc4aa.webp",
     "static/media/Magazines.webp": "/static/media/Magazines.2a18bf435d198d796d93.webp",
     "static/media/Malluable 3.webp": "/static/media/Malluable 3.7d951da536af16a5a80f.webp",
@@ -16,6 +15,7 @@
     "static/media/Ichi-accesability.webp": "/static/media/Ichi-accesability.deb3930ea9e09f49f507.webp",
     "static/media/Marketlog_result_small_2.webp": "/static/media/Marketlog_result_small_2.7ded4f91f7712cbf0a5c.webp",
     "static/media/WildHeart.svg": "/static/media/WildHeart.25ecf2701418967bb991803eaa486894.svg",
+    "static/media/Patzanki 6.webp": "/static/media/Patzanki 6.d4881144cb65b7fb516a.webp",
     "static/media/maynooth-mockup-1.webp": "/static/media/maynooth-mockup-1.8b80c927ff32a764d485.webp",
     "static/media/Afterdark.webp": "/static/media/Afterdark.a4574d5f3f3e88dda264.webp",
     "static/media/maynooth-user.webp": "/static/media/maynooth-user.dc77b8ae2dac56535e6c.webp",
@@ -76,11 +76,11 @@
     "static/media/yellowBlob.svg": "/static/media/yellowBlob.c09615fb13e65746240d718e56d28305.svg",
     "static/media/YellowCircle.svg": "/static/media/YellowCircle.daf06537bcfdd2fd9805d2afe726b0df.svg",
     "main.9c2a394c.css.map": "/static/css/main.9c2a394c.css.map",
-    "main.7f7de94e.js.map": "/static/js/main.7f7de94e.js.map",
+    "main.6bd5296c.js.map": "/static/js/main.6bd5296c.js.map",
     "787.08110660.chunk.js.map": "/static/js/787.08110660.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9c2a394c.css",
-    "static/js/main.7f7de94e.js"
+    "static/js/main.6bd5296c.js"
   ]
 }
